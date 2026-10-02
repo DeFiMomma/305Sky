@@ -19,8 +19,8 @@
 | 2 | Future tense | Quote precedes work |
 | 7 | Future tense; fills the missing progress-payment amount | Original reads "A progressive payment **of** was required" |
 | 8, 12, 18, 21, 22 | Future tense | Quote precedes work |
-| 17 | Intro reworded; 17j uses actual consumables policy | Original says "up to 5% of labor"; shop charges 4% |
-| 22 | Markup sentence uses actual markup policy | Original says "minimum of 15%"; shop charges 20% |
+| 17 | Intro reworded; 17j uses actual consumables policy | Original says "up to 5% of labor"; shop charges 4% of the whole invoice, capped at $5,000 |
+| 22 | Markup sentence uses actual markup policy | Original says "minimum of 15%"; shop now uses tiered parts markup (100% / 25% / 20%) and 20% on shipping and fuel |
 
 ## Revised sections
 
@@ -34,18 +34,23 @@
 
 **17. ADDITIONAL CHARGES.** The following charges are not included in the quoted prices and will be added to the invoice where applicable:
 *[Items a–i unchanged.]*
-j. A consumables and shop supplies charge of {{consumables_percent}} of the {{consumables_base_description}}, not to exceed {{consumables_cap}} per work order.
+j. A consumables and shop supplies charge of {{consumables_percent}} of the total invoice, not to exceed {{consumables_cap}} per work order.
 *[Items k–o unchanged.]*
 
 **18. AVIONICS.** Avionics work is subject to 305 SKY LLC's review of the aircraft's wiring diagrams, availability of adequate space and power on the aircraft, the aircraft's compatibility with the system installed and Customer's expectations and mission requirements. Customer is required to provide current avionics drawings, a photograph of the instrument panels and pedestal and an equipment list.
 
 **21. SUBSTITUTIONS.** 305 SKY LLC reserves the right to incorporate changes deemed necessary by 305 SKY LLC to avoid delays or improve product control, performance, reliability, stability, utility, manufacture, or appearance of the work.
 
-**22. PMA PARTS, PRICING AND SHOP RATES.** Parts pricing is subject to change by the OEM or supplier at the time of order. FAA PMA approved parts may be used. Any parts or assemblies permanently removed from the aircraft as part of maintenance or modification events become the property of 305 SKY LLC unless arrangements are made in advance to the contrary. Work is performed on a time and materials basis, unless a flat-rated basis for labor is specified. Pricing may or may not include an agency or finder's fee. Prices for inspections include flat-rated labor in accordance with the requirements in the manufacturer's inspection manual. Flat-rated labor is billed at the quoted rate regardless of the actual amount of labor required. Time and Materials items are billed based upon the actual materials, parts, labor, and outside services used. Unless otherwise quoted, parts, materials and outside vendor services are billed at cost plus {{parts_markup_percent}}.
+**22. PMA PARTS, PRICING AND SHOP RATES.** Parts pricing is subject to change by the OEM or supplier at the time of order. FAA PMA approved parts may be used. Any parts or assemblies permanently removed from the aircraft as part of maintenance or modification events become the property of 305 SKY LLC unless arrangements are made in advance to the contrary. Work is performed on a time and materials basis, unless a flat-rated basis for labor is specified. Pricing may or may not include an agency or finder's fee. Prices for inspections include flat-rated labor in accordance with the requirements in the manufacturer's inspection manual. Flat-rated labor is billed at the quoted rate regardless of the actual amount of labor required. Time and Materials items are billed based upon the actual materials, parts, labor, and outside services used. Unless otherwise quoted, parts and materials are billed at cost plus a markup based on unit cost ({{parts_markup_schedule}}); shipping is billed at cost plus {{shipping_markup_percent}}; fuel is billed at cost plus {{fuel_markup_percent}}; and outside vendor services are billed as quoted.
+
+## Settled pricing (Oct 2026)
+
+- Consumables: 4% of the total invoice, capped at $5,000 per work order.
+- Parts markup by unit cost: under $100 = +100%; $100 to under $1,000 = +25%; $1,000 and up = +20%.
+  `{{parts_markup_schedule}}` prints as: "100% on items under $100, 25% on items from $100 to $999.99, and 20% on items $1,000 and over".
+- Shipping and fuel: +20%. Outside labor: case by case, no automatic markup.
 
 ## Open questions before this can be approved
 
-1. What is the 4% consumables fee calculated on (`consumables_base_description`)? Is the $5,000 cap firm?
-2. Does the 20% markup apply to outside vendor services, shipping and fuel as well as parts?
-3. Should the invoice terms (17j and 22) be updated to match as well? The current invoice terms understate both.
-4. Attorney review of all wording changes.
+1. Should the invoice terms (17j and 22) be updated to match as well? The current invoice terms understate both.
+2. Attorney review of all wording changes.
