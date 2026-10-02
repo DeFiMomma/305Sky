@@ -197,6 +197,9 @@ export default async function WorkOrderPage({ params }: { params: Promise<{ id: 
 
               <ReadyCard title="Ready to quote?" issues={view.quoteChecks} />
               <ReadyCard title="Ready to invoice?" issues={view.invoiceChecks} />
+              <Link href={`/work-orders/${wo.id}/invoice`} className="btn-secondary w-full">
+                Preview invoice
+              </Link>
 
               <div id="quotes" className="card p-4">
                 <h3 className="mb-3 font-semibold">Quotes</h3>

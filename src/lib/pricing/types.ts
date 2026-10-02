@@ -33,6 +33,10 @@ export interface Task {
   id: string;
   code: string;
   title: string;
+  /** Shown on documents under the title; carried into quote snapshots. */
+  description?: string;
+  /** Document grouping, e.g. "General", "Inspection", "Discrepancies". */
+  section?: string;
   status: TaskStatus;
   billing: TaskBilling;
   flatRateCents?: Cents;
@@ -106,12 +110,16 @@ export interface PricedCharge {
   extendedCostCents: Cents;
   extendedPriceCents: Cents;
   overridden: boolean;
+  /** False for parts requested or on order; only installed parts are "used". */
+  installed: boolean;
 }
 
 export interface PricedTask {
   taskId: string;
   code: string;
   title: string;
+  description?: string;
+  section?: string;
   status: TaskStatus;
   billing: TaskBilling;
   /** False for deferred, declined and internal tasks; they are shown but never billed. */

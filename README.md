@@ -11,12 +11,13 @@ all produced by one pricing calculation (`src/lib/pricing`), so they cannot disa
 |---|---|---|
 | Work orders | Office | Every open job, AOG first, with live totals and "vs quote" drift |
 | Work order | Office | Tasks/discrepancies, labor, parts & charges, live totals, ready-to-quote/invoice checks, quotes, payments |
-| Quote | Office | Printable estimate frozen from the work order, with deposit |
+| Quote | Office | Printable quote frozen from the work order, with deposit, in the same layout as the Aerokeeper documents |
+| Invoice | Office | Live draft invoice from the work order in the same layout, with payments and balance due |
 | Parts | Office | Technician part requests → sourcing → ordered → received, with a one-click RFQ email |
 | Labor | Office | Utilization per technician against the 80% target, and every time entry |
 | Technician app (`/tech`) | Technicians | Clock in/out, start/stop a task, request a part, report a discrepancy (phone-sized) |
 
-Screenshots are in `docs/screenshots/`.
+Screenshots are in `docs/screenshots/`; sample printed quote and invoice PDFs are in `docs/samples/`.
 
 ### Quotes vs. the work order
 
@@ -65,6 +66,7 @@ schema runs on hosted Postgres (e.g. Supabase) with a one-line driver change in 
 
 - Individual logins (technicians currently pick their name on the device)
 - FAA registry lookup by tail number
-- Invoices and QuickBooks sync (Online or Desktop still to confirm)
-- Terms & conditions on printed quotes (waiting on attorney review of the quote version)
+- Finalizing/locking invoices and QuickBooks sync (Online or Desktop still to confirm)
+- Quote-specific terms (quotes print the current invoice terms until the quote version is approved)
+- Company email/phone for the "Questions?" line (`src/lib/company.ts`)
 - AI-drafted RFQs to PartsBase vendors and AI review of quote estimates

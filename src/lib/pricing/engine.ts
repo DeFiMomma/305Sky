@@ -66,6 +66,7 @@ export function priceCharge(line: ChargeLine, settings: PricingSettings): Priced
     extendedCostCents: Math.round(line.unitCostCents * line.quantity),
     extendedPriceCents: Math.round(unitPriceCents * line.quantity),
     overridden: line.override !== undefined,
+    installed: !line.notInstalled,
   };
 }
 
@@ -117,6 +118,8 @@ function priceTask(task: Task, wo: WorkOrder, settings: PricingSettings, basis: 
     taskId: task.id,
     code: task.code,
     title: task.title,
+    description: task.description,
+    section: task.section,
     status: task.status,
     billing: task.billing,
     billed,

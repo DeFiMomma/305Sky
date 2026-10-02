@@ -19,6 +19,9 @@ export const pricingSettings = DEFAULT_PRICING;
 /** Per-task change that counts as "changed since quote". */
 const QUOTE_DRIFT_TOLERANCE_CENTS = 5000;
 
+export const SECTION_LABEL = { general: "General", inspection: "Inspection", discrepancy: "Discrepancies" } as const;
+export const SECTION_ORDER = ["General", "Inspection", "Discrepancies"];
+
 export function taskCode(seq: number) {
   return `T${String(seq).padStart(3, "0")}`;
 }
@@ -99,6 +102,8 @@ export function toPricingInput(l: LoadedWorkOrder, now = new Date()): PricingWor
       id: String(t.id),
       code: taskCode(t.seq),
       title: t.title,
+      description: t.description ?? undefined,
+      section: SECTION_LABEL[t.category],
       status: t.status,
       billing: t.billing,
       flatRateCents: t.flatRateCents ?? undefined,
