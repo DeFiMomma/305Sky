@@ -83,6 +83,17 @@ describe("checkWorkOrder", () => {
     expect(run(base, "invoice", "Questions? Contact us at [contact_email]")).toContain("unfilled_placeholder");
   });
 
+  it("warns on a quote, and blocks an invoice, when a part has no cost yet", () => {
+    const wo: WorkOrder = {
+      ...base,
+      charges: [{ id: "c1", taskId: "t1", kind: "part", description: "Starter generator", quantity: 1, unitCostCents: 0, costPending: true }],
+    };
+    const quote = checkWorkOrder(wo, priceWorkOrder(wo, DEFAULT_PRICING), "quote");
+    expect(quote.find((i) => i.code === "cost_pending")?.severity).toBe("warning");
+    const invoice = checkWorkOrder(wo, priceWorkOrder(wo, DEFAULT_PRICING), "invoice");
+    expect(invoice.find((i) => i.code === "cost_pending")?.severity).toBe("error");
+  });
+
   it("warns when charges are attached to an internal task", () => {
     const wo: WorkOrder = {
       ...base,

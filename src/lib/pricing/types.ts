@@ -69,6 +69,10 @@ export interface ChargeLine {
    */
   unitCostCents: Cents;
   override?: PriceOverride;
+  /** True while a part is being sourced and its cost is not yet known (priced at 0). */
+  costPending?: boolean;
+  /** True for parts requested or on order but not yet installed on the aircraft. */
+  notInstalled?: boolean;
 }
 
 export interface Payment {

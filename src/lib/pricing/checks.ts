@@ -1,3 +1,4 @@
+import { isBilled } from "./engine";
 import type { PricedWorkOrder, WorkOrder } from "./types";
 
 export type DocumentKind = "quote" | "invoice";
@@ -66,6 +67,24 @@ export function checkWorkOrder(
         severity: "error",
         code: "override_without_reason",
         message: `"${line.description}" has a manual price change with no reason.`,
+        taskId: task.id,
+        lineId: line.id,
+      });
+    }
+    if (line.costPending && isBilled(task)) {
+      issues.push({
+        severity: kind === "invoice" ? "error" : "warning",
+        code: "cost_pending",
+        message: `"${line.description}" has no cost yet, so it is priced at $0.`,
+        taskId: task.id,
+        lineId: line.id,
+      });
+    }
+    if (kind === "invoice" && line.notInstalled && isBilled(task)) {
+      issues.push({
+        severity: "warning",
+        code: "part_not_installed",
+        message: `"${line.description}" is billed but not marked installed.`,
         taskId: task.id,
         lineId: line.id,
       });

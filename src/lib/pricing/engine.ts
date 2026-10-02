@@ -82,7 +82,19 @@ function sumHours(hours: number[]): number {
   return Math.round(sum(hours.map((h) => Math.round(h * 100)))) / 100;
 }
 
-function priceTask(task: Task, wo: WorkOrder, settings: PricingSettings): PricedTask {
+/**
+ * How hourly (time & materials) labor is counted. Flat-rate tasks are unaffected.
+ * - actual: hours logged so far (what an invoice bills)
+ * - projected: estimated hours, or hours logged once a job runs past its estimate
+ *   (what a quote shows, and what later changes are compared against)
+ */
+export type LaborBasis = "actual" | "projected";
+
+function billableHours(actual: number, estimated: number | undefined, basis: LaborBasis) {
+  return basis === "projected" && estimated !== undefined ? Math.max(actual, estimated) : actual;
+}
+
+function priceTask(task: Task, wo: WorkOrder, settings: PricingSettings, basis: LaborBasis): PricedTask {
   const actualHours = sumHours(
     wo.timeEntries.filter((e) => e.taskId === task.id).map((e) => e.hours),
   );
@@ -97,7 +109,7 @@ function priceTask(task: Task, wo: WorkOrder, settings: PricingSettings): Priced
     laborCents =
       task.billing === "flat_rate"
         ? (task.flatRateCents ?? 0)
-        : Math.round(actualHours * laborRateCents);
+        : Math.round(billableHours(actualHours, task.estimatedHours, basis) * laborRateCents);
   }
   const chargesCents = billed ? sum(charges.map((c) => c.extendedPriceCents)) : 0;
 
@@ -129,8 +141,12 @@ function priceTask(task: Task, wo: WorkOrder, settings: PricingSettings): Priced
  * The single pricing calculation. Quotes, invoices, the work order screen and the
  * QuickBooks export all call this, so they can never disagree with one another.
  */
-export function priceWorkOrder(wo: WorkOrder, settings: PricingSettings): PricedWorkOrder {
-  const tasks = wo.tasks.map((t) => priceTask(t, wo, settings));
+export function priceWorkOrder(
+  wo: WorkOrder,
+  settings: PricingSettings,
+  basis: LaborBasis = "actual",
+): PricedWorkOrder {
+  const tasks = wo.tasks.map((t) => priceTask(t, wo, settings, basis));
   const billedTasks = tasks.filter((t) => t.billed);
   const billedCharges = billedTasks.flatMap((t) => t.charges);
   const chargesOfKind = (kind: PricedCharge["kind"]) =>

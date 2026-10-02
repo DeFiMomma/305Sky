@@ -276,3 +276,32 @@ describe("regression: WO-00030-N604XT task T307 'Additional Parts'", () => {
     expect(t.partsCents).toBe(952_470);
   });
 });
+
+describe("labor basis (quote/projection vs invoice)", () => {
+  const wo = workOrder({
+    tasks: [
+      task({ id: "t1", estimatedHours: 4 }),
+      task({ id: "t2", estimatedHours: 2 }),
+      task({ id: "t3" }), // no estimate
+      task({ id: "t4", billing: "flat_rate", flatRateCents: 100000, estimatedHours: 10 }),
+    ],
+    timeEntries: [
+      { id: "e1", taskId: "t1", technicianId: "u", hours: 1 }, // under estimate
+      { id: "e2", taskId: "t2", technicianId: "u", hours: 3 }, // over estimate
+      { id: "e3", taskId: "t3", technicianId: "u", hours: 0.5 },
+      { id: "e4", taskId: "t4", technicianId: "u", hours: 12 },
+    ],
+  });
+  const labor = (basis: "actual" | "projected") =>
+    priceWorkOrder(wo, S, basis).tasks.map((t) => t.laborCents);
+
+  it("bills logged hours on an invoice", () => {
+    expect(labor("actual")).toEqual([16500, 49500, 8250, 100000]);
+  });
+  it("quotes/projects the estimate, or actual hours once a job runs over", () => {
+    expect(labor("projected")).toEqual([66000, 49500, 8250, 100000]);
+  });
+  it("still reports actual hours whatever the basis", () => {
+    expect(priceWorkOrder(wo, S, "projected").tasks.map((t) => t.actualHours)).toEqual([1, 3, 0.5, 12]);
+  });
+});
