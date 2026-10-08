@@ -2,8 +2,23 @@
 
 `aircraft-management-maintenance-fort-lauderdale.html` is a standalone page targeting
 **aircraft maintenance Fort Lauderdale** and **aircraft management Fort Lauderdale**.
-It has no build step: upload it with `305sky-logo.png` beside it, or copy its sections
-into your site builder (WordPress, Webflow, Wix, Squarespace).
+It has no build step: upload it with `305sky-logo-light.png` (the logo recolored for dark
+backgrounds) and an `images/` folder beside it, or copy its sections into your site builder.
+
+The design follows the 305 SKY look: black, champagne gold, Cormorant Garamond serif
+headings and Jost text. If 305sky.com uses different fonts or gold values, change the
+`--gold…`, `--serif` and `--sans` variables at the top of the `<style>` block.
+
+## Photos
+
+The page has three photo slots. Until a photo exists it shows a dark, gold-lit backdrop,
+so it never looks broken. Use your own photos, saved as compressed JPG/WebP:
+
+| File | Use | Size |
+|---|---|---|
+| `images/hero.jpg` | Aircraft on the ramp / hangar at FLL (full-width hero) | ~2400×1500, < 400 KB |
+| `images/engine.jpg` | Technician / engine work in the hangar | ~1400×1800, < 300 KB |
+| `images/lounge.jpg` | Lobby or owner lounge | ~1400×1750, < 300 KB |
 
 Publish it at: `https://<your-domain>/aircraft-maintenance-management-fort-lauderdale-fl/`
 
@@ -23,9 +38,12 @@ Search the file for `{{`. Every placeholder must be replaced, including the ones
 | `{{CERTIFICATIONS_SENTENCE …}}` | A&P / IA / Part 145 details | Only state what is true. Delete the paragraph if unsure |
 | `{{GOOGLE_BUSINESS_PROFILE_URL}}`, `{{LINKEDIN_OR_INSTAGRAM_URL}}` | | Delete any line you don't have |
 
-**Check these against what you actually do:** the fleet list, the service cards and the
-airports list come from 305 SKY's job history and terms. If you don't offer something
-(for example travel to PBI), remove it. Add aircraft types you work on that aren't listed.
+**Check these against what you actually do:** the fleet list comes from 305 SKY's job
+history. The management services, owner benefits (preferred maintenance pricing, fuel
+discounts, parking, hangar network), maintenance services and painting note come from
+the earlier draft page. The airports list is a suggestion. Remove anything you don't
+offer and add aircraft types you work on that aren't listed. The FAQ text appears twice
+(visible and in the structured data), so edit both.
 
 After publishing, paste the URL into Google's Rich Results Test
 (https://search.google.com/test/rich-results) to confirm the structured data is valid.
