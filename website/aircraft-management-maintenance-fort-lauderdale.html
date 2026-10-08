@@ -229,7 +229,8 @@
   /* Hero */
   .hero { position: relative; min-height: 100vh; min-height: 100svh; display: flex; align-items: flex-end; padding: 150px 0 0; overflow: hidden; background: radial-gradient(900px 600px at 78% 30%, rgba(201,164,92,.18), transparent 60%), radial-gradient(700px 500px at 100% 100%, rgba(120,90,40,.25), transparent 70%), var(--black); }
   .hero-media { position: absolute; inset: 0; }
-  .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 70% center; }
+  .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 60%; }
+  @media (max-width: 760px) { .hero-media img { object-position: 42% center; } .hero::before { background: linear-gradient(180deg, rgba(10,10,10,.55) 0%, rgba(10,10,10,.82) 45%, var(--black) 100%); } }
   .hero::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(10,10,10,.94) 0%, rgba(10,10,10,.72) 38%, rgba(10,10,10,.15) 75%), linear-gradient(0deg, var(--black) 0%, transparent 35%); }
   .hero .wrap { position: relative; z-index: 2; width: 100%; }
   .hero h1 { font-size: clamp(2.8rem, 6.6vw, 5.6rem); line-height: .98; letter-spacing: -.01em; max-width: 13ch; margin-bottom: 30px; }
@@ -417,7 +418,7 @@
 <main>
   <section class="hero" aria-labelledby="page-title">
     <div class="hero-media" aria-hidden="true">
-      <!-- Replace with your ramp/hangar photo (approx. 2400×1500, under 400 KB as WebP/JPG) -->
+      <!-- Ramp/hangar photo at FLL: save as images/hero.jpg (wide, approx. 2000×1000 or larger) -->
       <img class="slot" src="images/hero.jpg" alt="" fetchpriority="high" onload="this.classList.add('loaded')" onerror="this.remove()">
     </div>
     <div class="wrap">
@@ -547,8 +548,8 @@
       </div>
       <figure class="reveal">
         <!-- Replace with your lobby / lounge photo (approx. 1400×1750) -->
-        <img class="slot" src="images/lounge.jpg" alt="Owner and crew lounge at the 305 SKY facility at Fort Lauderdale-Hollywood International Airport" loading="lazy" onload="this.classList.add('loaded')" onerror="this.remove()">
-        <figcaption>305 SKY &middot; Fort Lauderdale &middot; FLL</figcaption>
+        <img class="slot" src="images/lounge.jpg" width="1086" height="1448" alt="305 SKY lobby in Fort Lauderdale with marble floors, leather seating and the illuminated 305 SKY sign" loading="lazy" onload="this.classList.add('loaded')" onerror="this.remove()">
+        <figcaption>305 SKY Lobby &middot; Fort Lauderdale &middot; FLL</figcaption>
       </figure>
     </div>
   </section>
