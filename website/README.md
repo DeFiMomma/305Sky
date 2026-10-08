@@ -1,84 +1,107 @@
-# Fort Lauderdale local landing page
+# 305 SKY location pages: developer handoff
 
-`aircraft-management-maintenance-fort-lauderdale.html` is a standalone page targeting
-**aircraft maintenance Fort Lauderdale** and **aircraft management Fort Lauderdale**.
-It has no build step: upload it with `305sky-logo-light.png` (the logo recolored for dark
-backgrounds) and an `images/` folder beside it, or copy its sections into your site builder.
+Two standalone, SEO-ready location pages in the 305 SKY style (black, champagne gold,
+Cormorant Garamond headings, Jost body text). Neither page needs a build step. Each one
+is a single HTML file with its CSS inline and a few lines of JavaScript for the header
+and scroll fades. The content stays visible if the JavaScript doesn't run.
 
-The design follows the 305 SKY look: black, champagne gold, Cormorant Garamond serif
-headings and Jost text. If 305sky.com uses different fonts or gold values, change the
-`--gold…`, `--serif` and `--sans` variables at the top of the `<style>` block.
+| File | Publish at | Target searches |
+|---|---|---|
+| `aircraft-management-maintenance-fort-lauderdale.html` | `/aircraft-maintenance-management-fort-lauderdale-fl/` | aircraft maintenance / aircraft management Fort Lauderdale |
+| `mid-heavy-jet-maintenance-vero-beach.html` | `/mid-heavy-jet-maintenance-vero-beach-fl/` | mid / heavy jet maintenance Vero Beach, aircraft maintenance / management Vero Beach |
+
+The pages link to each other (Vero Beach mention on the FLL page, "Two Florida
+locations" section on the VRB page, and both footers). **Keep those URLs**, or update
+the links in both files if you change them. Each published page must have a canonical
+URL that matches where it is served.
+
+Upload alongside the pages:
+
+```
+305sky-logo.png          favicon
+305sky-logo-light.png    logo recolored for dark backgrounds (header + footer)
+images/                  page photos (below)
+```
+
+If the site runs on a builder (WordPress, Webflow, Wix, Squarespace), you can paste each
+page into a full-width custom-code/HTML block. Keep the `<head>` contents too: the title,
+meta description, canonical and the `application/ld+json` structured data block. Most
+builders have a per-page SEO / head-code setting for these. To match 305sky.com's exact
+fonts or gold, change `--gold…`, `--serif` and `--sans` at the top of each `<style>` block.
 
 ## Photos
 
-The page has three photo slots. Until a photo exists it shows a dark, gold-lit backdrop,
-so it never looks broken. Use your own photos, saved as compressed JPG/WebP:
+A photo slot with no image shows a dark, gold-lit backdrop, so a missing photo never looks
+broken. Use compressed JPG/WebP.
 
-| File | Use | Size |
-|---|---|---|
-| `images/hero.jpg` | Aircraft on the ramp / hangar at FLL (full-width hero) | ~2400×1500, < 400 KB |
-| `images/engine.jpg` | Technician / engine work in the hangar | ~1400×1800, < 300 KB |
-| `images/lounge.jpg` | Lobby or owner lounge | ~1400×1750, < 300 KB |
-
-Publish it at: `https://<your-domain>/aircraft-maintenance-management-fort-lauderdale-fl/`
+| File | Page | Shows | Status |
+|---|---|---|---|
+| `images/hero.jpg` | FLL | Jet on the ramp at the FLL hangar (wide, ≥ 2000×1000) | **Needed:** the sunset Challenger photo |
+| `images/engine.jpg` | FLL | Technician / engine work (~1400×1800) | Needed |
+| `images/lounge.jpg` | FLL | FLL lobby | ✅ Included |
+| `images/vrb-hangar.jpg` | VRB | Large-cabin jet in or at the Vero Beach hangar (wide, ≥ 2000×1000) | Needed |
+| `images/vrb-work.jpg` | VRB | Technicians at work in the Vero Beach hangar (~1400×1800) | Needed |
 
 ## 1. Fill in the placeholders (required before publishing)
 
-Search the file for `{{`. Every placeholder must be replaced, including the ones in the
-`<script type="application/ld+json">` block at the top.
+Search each file for `{{`. Replace every placeholder, including the ones in the
+structured-data block at the top.
 
 | Placeholder | Example | Notes |
 |---|---|---|
 | `{{DOMAIN}}` | `305sky.com` | No `https://`, no trailing slash |
-| `{{PHONE_DISPLAY}}` | `(954) 555-0123` | Shown on the page |
-| `{{PHONE_E164}}` | `+19545550123` | Used in `tel:` links and structured data |
+| `{{PHONE_DISPLAY}}` / `{{PHONE_E164}}` | `(954) 555-0123` / `+19545550123` | FLL phone |
+| `{{VRB_PHONE_DISPLAY}}` / `{{VRB_PHONE_E164}}` | `(772) 555-0123` / `+17725550123` | Vero Beach phone. A local 772 number helps local ranking; otherwise use the main line |
+| `{{VRB_STREET_ADDRESS}}`, `{{VRB_ZIP}}` | | Vero Beach hangar address. Also update the map `q=` query in the VRB page, which currently points at Vero Beach Regional Airport |
 | `{{EMAIL}}` | `service@305sky.com` | |
-| `{{OPENS_24H …}}` / `{{CLOSES_24H …}}` | `08:00` / `17:00` | Must match Google Business Profile hours |
+| `{{OPENS_24H …}}` / `{{CLOSES_24H …}}` | `08:00` / `17:00` | Must match each Google Business Profile |
 | `{{HOURS_DISPLAY …}}` | `Mon–Fri 8:00 am – 5:00 pm · AOG by phone` | |
-| `{{CERTIFICATIONS_SENTENCE …}}` | A&P / IA / Part 145 details | Only state what is true. Delete the paragraph if unsure |
-| `{{GOOGLE_BUSINESS_PROFILE_URL}}`, `{{LINKEDIN_OR_INSTAGRAM_URL}}` | | Delete any line you don't have |
+| `{{GOOGLE_BUSINESS_PROFILE_URL}}`, `{{VRB_GOOGLE_BUSINESS_PROFILE_URL}}`, `{{LINKEDIN_OR_INSTAGRAM_URL}}` | | Delete any line you don't have |
 
-**Check these against what you actually do:** the fleet list comes from 305 SKY's job
-history. The management services, owner benefits (preferred maintenance pricing, fuel
-discounts, parking, hangar network), maintenance services and painting note come from
-the earlier draft page. The airports list is a suggestion. Remove anything you don't
-offer and add aircraft types you work on that aren't listed. The FAQ text appears twice
-(visible and in the structured data), so edit both.
+**Content to confirm with 305 SKY before launch:**
+- **FLL:** the fleet list comes from job history. The management services, owner
+  benefits (preferred maintenance pricing, fuel discounts, parking, hangar network),
+  maintenance services and painting note come from 305 SKY's draft page.
+- **VRB:** the 12,000+ sq ft hangar, large-cabin jets (Falcon 900, G450, Global Express)
+  worked inside, and full-service management are from 305 SKY. The page assumes the
+  hangar is at Vero Beach Regional (VRB); correct it if not. The service-area airport
+  lists are suggestions.
+- Each FAQ appears twice, once visible and once in the structured data. Edit both.
 
-After publishing, paste the URL into Google's Rich Results Test
-(https://search.google.com/test/rich-results) to confirm the structured data is valid.
+After publishing, run each URL through Google's Rich Results Test
+(https://search.google.com/test/rich-results) and submit both in Google Search Console.
 
-## 2. What actually gets you onto page 1
+## 2. What gets you onto page 1
 
-The page covers on-page SEO: title, meta description, H1/H2 keywords, local content, NAP,
-map, FAQ and LocalBusiness/Service schema. For local searches like these, Google mostly
-ranks businesses on the following, in roughly this order:
+The pages cover on-page SEO: title, meta description, H1/H2 keywords, local content,
+name/address/phone, map, FAQ and LocalBusiness/Service structured data. For local
+searches, Google mostly ranks businesses on the following:
 
-1. **Google Business Profile.** This decides whether you show in the map pack, which
-   appears above the organic results.
-   - Primary category: *Aircraft maintenance company*. Secondary: *Aircraft management company*
-     if available, otherwise *Aviation consultant*.
-   - Name exactly "305 SKY" (no added keywords, which can get the profile suspended),
-     the same address and phone as the page, and the same hours.
-   - Set the website link to this page (or the homepage with this page linked prominently).
-   - Add services ("Aircraft maintenance", "Aircraft management", "AOG support",
-     "Phase inspections"…), real photos of the hangar, team and aircraft (with owner
-     permission), and a post every week or two.
-2. **Reviews.** Ask every satisfied customer for a Google review. Ask them to mention
-   the aircraft type and the work done. Reply to every review.
-3. **Consistent citations.** List the exact same name, address and phone on Bing Places,
-   Apple Business Connect, Yelp, BBB, LinkedIn, and aviation directories (AirNav FBO/
-   services listings for FLL, Aviation Week/AC-U-KWIK, Globalair.com, AvBuyer, etc.).
-4. **Links and mentions.** Get linked from FBOs you work with, aircraft brokers, flight
-   schools, type clubs (e.g. MU-2 and King Air owner groups) and local business groups
-   (Greater Fort Lauderdale Chamber, Broward aviation groups).
-5. **Supporting pages.** Link to this page from your homepage and main navigation.
-   Over time, add separate pages for "Challenger 604 maintenance", "King Air
-   maintenance", "AOG service South Florida" and "Aircraft management", each linking
-   back here. Short job write-ups ("400-hour check on a Challenger 604 at FLL") are
-   good content.
-6. **Technical basics.** HTTPS, fast mobile load (this page has no JavaScript and loads
-   quickly), and submit the URL in Google Search Console after publishing.
+1. **A Google Business Profile for each location.** Vero Beach needs its own profile,
+   verified at the hangar address. Each profile decides whether that location shows in
+   the map results above the organic listings.
+   - Primary category: *Aircraft maintenance company*. Secondary: *Aircraft management
+     company* if available, otherwise *Aviation consultant*.
+   - Name exactly "305 SKY" on both (no added keywords, which risks suspension). Use the
+     same address, phone and hours as the matching page.
+   - Link each profile's website to its own location page.
+   - Add services ("Mid-size jet maintenance", "Heavy jet maintenance", "AOG support",
+     "Aircraft management"…), real hangar photos (a large jet inside the Vero Beach
+     hangar is the strongest image you have), and post every week or two.
+2. **Reviews.** Ask every satisfied customer for a Google review on the right location's
+   profile, mentioning the aircraft type and the work done ("G450 inspection in Vero
+   Beach"). Reply to every review.
+3. **Consistent citations** for each location: Bing Places, Apple Business Connect, Yelp,
+   BBB, LinkedIn, and aviation directories (AirNav FBO/services for FLL and VRB, AC-U-KWIK,
+   Globalair.com, AvBuyer).
+4. **Links and mentions:** the FBOs at FLL and VRB, aircraft brokers, Falcon / Gulfstream /
+   Global operators and owner groups, the Indian River County Chamber and the Greater Fort
+   Lauderdale Chamber.
+5. **Supporting pages.** Link both location pages from the homepage and main navigation.
+   Later, add pages such as "Gulfstream G450 maintenance", "Falcon 900 maintenance",
+   "Global Express maintenance" and "AOG service Treasure Coast" that link back to the
+   location pages. Short job write-ups ("G450 96-month inspection in Vero Beach") work well.
+6. **Technical basics:** HTTPS, fast mobile load, and photos compressed to the sizes above.
 
 Expect weeks to months, not days. Track progress in Search Console (queries containing
-"fort lauderdale") and the Google Business Profile performance tab.
+"fort lauderdale" / "vero beach") and each Google Business Profile's performance tab.
