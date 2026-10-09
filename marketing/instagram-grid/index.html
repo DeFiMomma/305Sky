@@ -94,7 +94,7 @@
   .tile .num { font: 300 34cqw/.9 var(--serif); margin-bottom: 4cqw; }
 
   .d.photo { background: var(--black); }
-  .d.photo .ph { filter: brightness(.74) contrast(1.15) saturate(.72) sepia(.14); }
+  .d.photo .ph { filter: brightness(.7) contrast(1.18) saturate(.78) sepia(.24); }
   .d.photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(5,5,5,.94) 0%, rgba(5,5,5,.35) 44%, transparent 64%), radial-gradient(120% 80% at 50% 30%, transparent 55%, rgba(0,0,0,.55)); }
   .d .eb { color: var(--gold); }
   .d .tt { color: var(--ivory); }
@@ -159,7 +159,7 @@
   <div class="wrap">
     <p class="eyebrow">305 SKY · Grid studio</p>
     <h1>Your feed, <em class="gold-text">three ways.</em></h1>
-    <p>On the left is @305skymaintenance as it looks today. Next to it, your own topics and photos are redesigned as Checkerboard, Bands and Noir. Click any new tile to edit that post's words, photo or tone; every grid updates at once.</p>
+    <p>On the left is @305skymaintenance as it looks today. Next to it, your own topics and full-size Drive photos are redesigned as Checkerboard (your pick), Bands and Noir. Click any new tile to edit that post's words, photo or tone; every grid updates at once.</p>
   </div>
 </div>
 
@@ -208,7 +208,7 @@
         <h3>Keep</h3>
         <ul>
           <li><b>Black and gold.</b> The base is right, and people already link it to 305 SKY.</li>
-          <li><b>Real photography.</b> The Challenger at sunset, the cabin, the techs on the King Air and the panel are strong. They are the hero of every new layout above.</li>
+          <li><b>Real photography.</b> The King Air at sunset, the hangar at dusk, the cognac cabins, the techs at work and the Garmin panel are strong. They are the hero of every new layout above.</li>
           <li><b>The serif headlines.</b> "The Engine Records Matter" and "Transform The Cabin" already feel high end.</li>
           <li><b>The client testimonial</b> from a 15-year private jet owner. It is the most persuasive post on the grid.</li>
         </ul>
@@ -228,35 +228,44 @@
   </div>
 </section>
 
-<footer><div class="wrap">Concept mockup. New tiles use photos cropped from your feed screenshots, so they look soft when enlarged; full-size originals will be sharp. Edits are saved in this browser only.</div></footer>
+<footer><div class="wrap">Concept mockup. New tiles use full-size photos from the 305 SKY Drive folder, graded warm and low-key to match the Brand Vibe board. Edits are saved in this browser only.</div></footer>
 
 <script>
+  const R = "images/real/";
   const PHOTOS = {
-    challenger: { label: "Challenger at sunset", src: "images/photos/challenger-stairs.jpg", pos: "35% 50%" },
-    global: { label: "Global on the FLL ramp", src: "images/hero.jpg", pos: "30% 50%", size: "auto 100%" },
-    tech: { label: "Technician at the panel", src: "images/photos/tech-panel.jpg", pos: "40% 40%" },
-    cabin: { label: "Leather cabin", src: "images/photos/cabin.jpg", pos: "50% 50%" },
-    vrb: { label: "Vero Beach hangar sign", src: "images/vrb-hangar.jpg", pos: "50% 4%", size: "190%", noMark: true },
-    prop: { label: "Prop and technician", src: "images/photos/prop-tech.jpg", pos: "45% 50%" },
-    garmin: { label: "Garmin panel", src: "images/photos/garmin-panel.jpg", pos: "50% 50%" },
-    kingair: { label: "Tech on the King Air", src: "images/photos/tech-kingair.jpg", pos: "45% 50%" },
-    storage: { label: "Jets in the hangar", src: "images/photos/storage-hangar.jpg", pos: "50% 50%" },
-    engine: { label: "Engine close-up", src: "images/photos/engine-closeup.jpg", pos: "40% 50%" },
-    hangar: { label: "King Air at the hangar", src: "images/photos/kingair-hangar.jpg", pos: "40% 60%" },
-    lounge: { label: "FLL lounge", src: "images/lounge.jpg", pos: "50% 40%" },
-    logo: { label: "Lit logo, FLL lobby", src: "images/lounge.jpg", pos: "66% 34%", size: "260%", noMark: true }
+    sunsetKingAir: { label: "King Air at sunset", src: R + "sunset-kingair.jpg", pos: "14% 78%", size: "auto 125%" },
+    hangarDusk: { label: "Hangar door at dusk", src: R + "hangar-dusk.jpg", pos: "50% 45%" },
+    techEngine: { label: "Technician on the engine", src: R + "tech-engine.jpg", pos: "50% 40%" },
+    cabinCognac: { label: "Cognac leather cabin", src: R + "cabin-cognac.jpg", pos: "74% 50%" },
+    cabinSeats: { label: "Cabin seats", src: R + "cabin-seats.jpg", pos: "50% 50%" },
+    hangarFull: { label: "Hangar full of King Airs", src: R + "hangar-full.jpg", pos: "50% 60%" },
+    challengerNose: { label: "Challenger nose and stairs", src: R + "challenger-nose.jpg", pos: "22% 70%", size: "auto 120%" },
+    garmin: { label: "Garmin panel", src: R + "garmin-panel.jpg", pos: "50% 45%" },
+    turbine: { label: "Turbine engine detail", src: R + "turbine.jpg", pos: "48% 50%" },
+    crewFlag: { label: "The crew under the flag", src: R + "crew-flag.jpg", pos: "50% 55%" },
+    techCockpit: { label: "Technician in the cockpit", src: R + "tech-cockpit.jpg", pos: "50% 50%" },
+    techsWing: { label: "Two techs on the wing", src: R + "techs-wing.jpg", pos: "45% 55%" },
+    pt6: { label: "PT6 engine, blue cowl", src: R + "pt6-blue.jpg", pos: "50% 50%" },
+    citationCabin: { label: "Citation cabin", src: R + "citation-cabin.jpg", pos: "50% 50%" },
+    cabinStripped: { label: "Cabin stripped for refurb", src: R + "cabin-stripped.jpg", pos: "50% 50%" },
+    propTech: { label: "Technician at the prop", src: R + "prop-tech.jpg", pos: "50% 50%" },
+    kingAirFront: { label: "King Air, nose on", src: R + "kingair-hangar.jpg", pos: "50% 50%" },
+    hangarEvening: { label: "Hangar and fuel truck, evening", src: R + "hangar-evening.jpg", pos: "45% 55%" },
+    lounge: { label: "Lobby lounge", src: "images/lounge.jpg", pos: "50% 40%" },
+    logo: { label: "Lit logo in the lobby", src: "images/lounge.jpg", pos: "66% 34%", size: "260%", noMark: true },
+    vrb: { label: "Vero Beach hangar sign", src: "images/vrb-hangar.jpg", pos: "50% 4%", size: "190%", noMark: true }
   };
 
   const DEFAULT_POSTS = [
-    { eb: "Return to service", tt: "Back in the *sky.*", ph: "challenger", fmt: "reel" },
+    { eb: "Return to service", tt: "Back in the *sky.*", ph: "sunsetKingAir", fmt: "reel" },
     { eb: "Owners on speed dial", tt: "When you call, *we answer.*", fmt: "carousel" },
-    { eb: "Inspection planning", tt: "Stay ahead of what *comes due.*", ph: "tech", fmt: "carousel" },
-    { eb: "15-year client · Private jet owner", tt: "“I always give him business whenever *I can.*”" },
-    { eb: "Interiors", tt: "Transform the *cabin.*", ph: "cabin" },
-    { eb: "AOG support · 30-mile radius", tt: "Grounded? *Call us first.*", fmt: "reel" },
-    { eb: "Vero Beach · 12,000+ sq ft", tt: "Room for the jets that *need it.*", ph: "vrb", fmt: "carousel" },
+    { eb: "Inspection planning", tt: "Stay ahead of what *comes due.*", ph: "techEngine", fmt: "carousel" },
+    { eb: "15-year client \u00b7 Private jet owner", tt: "\u201CI always give him business whenever *I can.*\u201D" },
+    { eb: "Interiors", tt: "Transform the *cabin.*", ph: "cabinCognac" },
+    { eb: "AOG support \u00b7 30-mile radius", tt: "Grounded? *Call us first.*", fmt: "reel" },
+    { eb: "After hours", tt: "The light stays *on.*", ph: "hangarDusk", fmt: "reel" },
     { eb: "How we work", tt: "Clear quotes. *No surprises.*", fmt: "carousel" },
-    { eb: "Pre-buy inspections", tt: "Know what you're *buying.*", ph: "prop", fmt: "carousel" },
+    { eb: "Pre-buy inspections", tt: "Know what you're *buying.*", ph: "challengerNose", fmt: "carousel" },
     { eb: "The bloodline", tt: "Generations of aviators", num: "3rd" },
     { eb: "Garmin avionics", tt: "Before you upgrade the *panel.*", ph: "garmin" },
     { eb: "Now hiring A&P mechanics", tt: "Join the *crew.*", fmt: "reel" }
@@ -264,7 +273,7 @@
 
   const OPTIONS = [
     { key: "current", tag: "Today", name: "Current feed", blurb: "@305skymaintenance, from your screenshots." },
-    { key: "A", tag: "Option A · Recommended", name: "Checkerboard", pick: true, blurb: "Alternate dark and ivory. Photos dark, words ivory.", tone: i => i % 2 === 0 ? "dark" : "light" },
+    { key: "A", tag: "Option A · Your pick", name: "Checkerboard", pick: true, blurb: "Alternate dark and ivory. Photos dark, words ivory.", tone: i => i % 2 === 0 ? "dark" : "light" },
     { key: "B", tag: "Option B", name: "Bands", blurb: "Rows of three alternate dark and ivory.", tone: i => Math.floor(i / 3) % 2 === 0 ? "dark" : "light" },
     { key: "C", tag: "Option C", name: "Noir", blurb: "All dark, lit only by gold and ivory.", tone: () => "dark" }
   ];
@@ -272,7 +281,7 @@
   const REEL = '<svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M3 8.5h18M9 3l2.5 5.5M14.5 3 17 8.5"/><path d="m10 12 5 3-5 3z" fill="currentColor" stroke="none"/></svg>';
   const CAROUSEL = '<svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="7" y="3" width="14" height="14" rx="2.5"/><path d="M4 7v11.5A2.5 2.5 0 0 0 6.5 21H17"/></svg>';
 
-  const KEY = "305sky-grid-studio-v1";
+  const KEY = "305sky-grid-studio-v2";
   let posts = load();
   let selected = 0;
   let shown = { current: true, A: true, B: true, C: true };

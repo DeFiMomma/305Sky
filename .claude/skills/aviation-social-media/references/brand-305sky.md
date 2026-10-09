@@ -93,7 +93,10 @@ photo grading, Instagram grid, post templates) is in `visual-identity.md`. Match
 - Google Drive folder "305 Sky" photos: `1itDIjIsMOl5_mHMdeLlomLs4slWvoe_w` (subfolders "305 Sky Social Media Brand Vibe"
   and "NEW October 2026"). Many filenames contain tail numbers (e.g. N750MD, N601BC, N6407X, N191WB, N222PV) —
   treat those aircraft as customer aircraft: blur/crop registrations unless the owner approved.
-- The Drive connector returns files inline as base64, so only small files can be pulled into a session. For design
-  work, use photos committed under `marketing/photos/` (web-sized, ≤ 2000 px) or attached directly in chat.
+- Catalog of the folder by category: `marketing/photos/catalog.md`. To pull full-size files: list IDs with the Drive
+  connector, then download with `curl -L "https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t"`
+  (needs drive.google.com + drive.usercontent.google.com allowed in the environment's network settings and the folder
+  shared "anyone with the link"). Resize to ≤ 2000 px before use. The connector's own download returns base64 inline —
+  only usable for tiny files.
 - Already in the repo: FLL ramp at sunset with a Global, FLL lobby with the lit logo, VRB hangar with the 305 SKY sign
   (`marketing/instagram-grid/images/`).
