@@ -21,8 +21,8 @@ written as `[CONFIRM: …]` in drafts until the owner verifies it, then moved up
 - **AOG mobile response radius: 30 miles** from each location.
 - **Four Florida locations — "Four locations. One standard."**
   - **FLL** Fort Lauderdale–Hollywood Intl, 240 SW 34th St, Fort Lauderdale, FL 33315 — aircraft management +
-    in-house maintenance, with an **owner lounge**.
-  - **FXE** Fort Lauderdale Executive.
+    in-house maintenance, with the **owner lounge / lobby with the lit logo**. **FLL is the newest base** (a "now open" story worth repeating).
+  - **FXE** Fort Lauderdale Executive — a small maintenance hangar.
   - **BCT** Boca Raton, 3300 Airport Rd, Ste 202 — AOG maintenance, aircraft management, pre-buy inspections,
     records review, **Garmin avionics installations** (name product categories only, not dealer status).
   - **VRB** Vero Beach — **12,000+ sq ft hangar** that takes large-cabin jets inside (Falcon 900, Gulfstream G450,
@@ -47,7 +47,7 @@ written as `[CONFIRM: …]` in drafts until the owner verifies it, then moved up
 ## To confirm with the owner
 - Founder/owner names and whether they want to be named and pictured; Jet's role (in the business? age? OK to feature?).
 - Team: names, roles, A&P/IA holders, years each — and consent to appear on social.
-- FXE: what happens there; hours; is AOG answered 24/7?
+- Hours; is AOG answered 24/7?
 - OEM training; Garmin dealer status.
 - Reviews/testimonials (with permission), repeat-customer stats, turnaround records.
 - Customers who allow their aircraft/name to be featured (keep a permission log).

@@ -16,4 +16,4 @@ Tail numbers are visible in many shots: blur or crop unless the owner approved.
 | Turboprops on the ramp | N750MD-*, N191WB-ext-*, N601BC-2/-10/-27, N6407X-*, ph-0BD45D64 (N97YZE) and many ph-* King Air shots | Mostly bright midday light — grade warm/dark or use for ivory framed tiles |
 | Paint (partner work) | N222PV-paint-strip | Paint is done by partners — say so |
 | Do not use without rights | ph-030AF578, ph-3db1e6f4, ph-80ED0771, ph-563CD2B0 (King Air in flight), screenshot-0512-a…d | Look like OEM/listing marketing images, not 305 SKY's |
-| Brand | 305sky-final (logo), brand-vibe (Brand Vibe board, AI-generated reference) | Vibe board: dark, amber sunset light, spaced serif caps |
+| Brand | 305sky-final (logo), brand-vibe (Brand Vibe board, AI-generated reference) | Vibe board: dark, amber sunset light, spaced serif caps. Its lobby caption says FXE, but the lobby is at FLL |
