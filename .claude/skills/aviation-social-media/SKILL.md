@@ -19,6 +19,7 @@ and sales brands at the top of the category.
 | File | Read when |
 |---|---|
 | `references/brand-305sky.md` | Always. Facts, voice, audiences, differentiators — and the list of facts still **unconfirmed**. |
+| `references/visual-identity.md` | Always for anything visual. Black/gold/ivory tokens, type, photo grading, Instagram grid option, post templates. |
 | `references/platform-playbook.md` | Writing or formatting any post. Specs, cadence, caption structure, hashtags per platform. |
 | `references/content-pillars.md` | Planning a calendar or brainstorming. Pillars, mix ratios, idea bank, post templates. |
 | `references/industry-benchmarks.md` | Strategy work, competitor questions, "make it look like X". What the leaders in MRO, management, charter and sales do. |
@@ -31,9 +32,10 @@ and sales brands at the top of the category.
 2. **Proof over adjectives.** "Premier", "world-class" and "unmatched" are banned unless followed
    by evidence. Show the torque stripe, the clean bay, the before/after, the turnaround time,
    the technician's name and years on type.
-3. **Elite look, hangar-floor truth.** Borrow the visual discipline of charter and sales brands
-   (clean composition, restrained palette, black/gold/white, golden-hour ramp shots) but keep the
-   substance real: actual aircraft, actual people, actual work. No generic stock jets.
+3. **Luxe, elite, a bit of mysterious — with hangar-floor truth.** Black, champagne gold and ivory,
+   exactly as on the location pages (`visual-identity.md`). Say less, show more; light falls on the
+   subject and the rest stays in shadow. Keep the substance real: actual aircraft, people, hangars.
+   No generic stock jets, clip-art icons, bright colors or busy collages.
 4. **One idea per post.** Each post has a single takeaway the viewer could repeat.
 5. **Native per platform.** Same story, different cut: Instagram = visual/emotional,
    LinkedIn = insight/credibility for DOMs and managers, Facebook = community/local/owners.
@@ -58,7 +60,7 @@ Produce, in order:
 9. **Open questions** — every `[CONFIRM]` item the plan depends on.
 
 ### B. Content calendar (e.g. 4 weeks)
-Output a table per week: `Day | Platform | Pillar | Format | Hook | Visual brief | CTA`, followed
+Output a table per week: `Day | Platform | Pillar | Format | Grid tone | Hook | Visual brief | CTA`, followed
 by the **full ready-to-post copy** for each post, grouped by platform. For each post include:
 - Hook (first line / on-screen text), full caption, hashtags (platform rules apply), alt text
 - Visual brief: exactly what to shoot, framing, aspect ratio, on-screen text per slide/scene
@@ -95,7 +97,7 @@ Score a draft against the checklist below and return a fixed version, not just n
 - [ ] No unconfirmed regulatory/certification claims; every `[CONFIRM]` resolved or flagged
 - [ ] Safety looks right in visuals (PPE, no FOD, proper stands/tooling, no unsafe shortcuts)
 - [ ] Alt text written; captions on all video (most views are muted)
-- [ ] On-brand: black/gold/white, logo placed per rules, voice per brand file
+- [ ] On-brand per `visual-identity.md`: tokens, Cormorant/Jost, grading, grid tone (Dark/Ivory) noted, logo rules
 
 ## Measuring
 Report against: reach & follower growth (awareness), saves/shares/comments per post (value),

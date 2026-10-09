@@ -18,6 +18,7 @@ than consumer brands — consistency and quality matter more than volume.
 
 ## Instagram
 - **Sizes:** Feed 4:5 (1080×1350) — profile grid now previews at 3:4, so keep key content central.
+- **Grid:** follow the chosen pattern in `visual-identity.md` (default: checkerboard, dark = image, ivory = words).
   Reels/Stories 9:16 (1080×1920), keep text inside the central safe zone (avoid top 250px / bottom 400px).
 - **Reels:** hook on screen in the first 1.5 s; 7–30 s for reach, up to 90 s for walkthroughs;
   burned-in captions; original footage only (re-uploads and other apps' watermarks get down-ranked).

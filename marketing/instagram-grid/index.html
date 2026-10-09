@@ -1,0 +1,296 @@
+<title>305 SKY Instagram Grid</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  /* Layout: hangar-noir page (same tokens as the 305 SKY location pages); three phone grids side by side, then close-ups and the rules of the look. Deliberately single dark theme. */
+  :root {
+    --black: #0a0a0a;
+    --panel: #111111;
+    --panel-2: #161616;
+    --ivory: #ece6d9;
+    --ivory-deep: #e2dac8;
+    --ink: #121110;
+    --text: #d8d2c4;
+    --muted: #9b9588;
+    --gold: #c9a45c;
+    --gold-deep: #8a6a2e;
+    --gold-soft: #e3c98d;
+    --gold-grad: linear-gradient(115deg, #f4e2a8 0%, #d6b26a 32%, #a87b34 62%, #e9cf8c 100%);
+    --hair: rgba(201,164,92,.22);
+    --hair-strong: rgba(201,164,92,.45);
+    --serif: "Cormorant Garamond", "Times New Roman", serif;
+    --sans: Jost, "Helvetica Neue", Arial, sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--black); color: var(--text); font: 300 16px/1.7 var(--sans); -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding-inline: 24px; }
+  @media (max-width: 600px) { .wrap { padding-inline: 16px; } }
+  h1, h2, h3 { margin: 0; color: var(--ivory); font-family: var(--serif); font-weight: 300; text-wrap: balance; }
+  em { font-style: italic; }
+  .gold-text { background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .eyebrow { display: flex; align-items: center; gap: 14px; font: 400 .7rem/1 var(--sans); letter-spacing: .32em; text-transform: uppercase; color: var(--gold); margin: 0 0 22px; }
+  .eyebrow::before { content: ""; width: 36px; height: 1px; background: var(--gold); flex: none; }
+  .lead { color: var(--muted); max-width: 62ch; font-size: 1.05rem; margin: 0; }
+  section { padding-block: 84px; }
+  section + section { border-top: 1px solid var(--hair); }
+
+  /* Intro */
+  .intro { padding-block: 72px 56px; background: radial-gradient(800px 500px at 85% 0%, rgba(201,164,92,.14), transparent 65%), var(--black); }
+  .intro h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1; margin-bottom: 22px; max-width: 16ch; }
+  .vibe { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; padding: 0; list-style: none; }
+  .vibe li { border: 1px solid var(--hair-strong); padding: 8px 16px; font-size: .68rem; letter-spacing: .28em; text-transform: uppercase; color: var(--ivory); }
+
+  /* Options */
+  .options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; margin-top: 48px; }
+  @media (max-width: 1080px) { .options { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 720px) { .options { grid-template-columns: minmax(0, 1fr); } }
+  .option header { display: grid; gap: 6px; margin-bottom: 18px; min-height: 120px; }
+  .option .tag { font-size: .64rem; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); }
+  .option h3 { font-size: 1.9rem; line-height: 1.1; }
+  .option header p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.55; }
+  .option.pick .tag::after { content: "  ·  Recommended"; color: var(--gold-soft); }
+  .phone { max-width: 400px; margin: 0 auto; border: 1px solid #2a2722; border-radius: 34px; padding: 14px 0 0; background: #000; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,.6); }
+  .option.pick .phone { border-color: var(--hair-strong); }
+  .ig-head { padding: 10px 16px 0; color: #f5f5f5; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; }
+  .ig-top { display: flex; align-items: center; justify-content: space-between; font-weight: 600; font-size: 15px; margin-bottom: 14px; }
+  .ig-top span:last-child { letter-spacing: 3px; color: #bbb; }
+  .ig-prof { display: flex; gap: 16px; align-items: center; }
+  .avatar { width: 72px; height: 72px; border-radius: 50%; flex: none; background: #000 url(images/logo-light.png) center/78% no-repeat; border: 1px solid var(--hair-strong); }
+  .bio { font-size: 12.5px; line-height: 1.45; min-width: 0; }
+  .bio b { display: block; font-size: 13.5px; }
+  .bio .cat { color: #a8a8a8; }
+  .highlights { display: flex; gap: 12px; padding: 16px 0 14px; overflow: hidden; }
+  .hl { display: grid; justify-items: center; gap: 5px; font-size: 10.5px; color: #ddd; flex: none; width: 56px; }
+  .hl i { width: 56px; height: 56px; border-radius: 50%; border: 1px solid #3a3a3a; display: grid; place-items: center; background: radial-gradient(circle at 50% 35%, #1d1a14, #050505 70%); }
+  .hl i::after { content: attr(data-g); font: italic 300 21px/1 var(--serif); color: var(--gold-soft); }
+  .ig-tabs { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #262626; }
+  .ig-tabs span { height: 38px; display: grid; place-items: center; color: #777; font-size: 11px; letter-spacing: .1em; }
+  .ig-tabs span:first-child { color: #f5f5f5; box-shadow: inset 0 -1px 0 #f5f5f5; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: #000; }
+
+  /* Tiles: every size scales from the tile's own width (cqw) */
+  .tile { position: relative; aspect-ratio: 3 / 4; container-type: inline-size; overflow: hidden; }
+  .tile .ph { position: absolute; inset: 0; background-size: cover; background-repeat: no-repeat; }
+  .tile .txt { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 9cqw 9cqw 10cqw; }
+  .tile .eb { font: 400 4.6cqw/1.3 var(--sans); letter-spacing: .28em; text-transform: uppercase; margin-bottom: 4cqw; }
+  .tile .tt { font: 300 12.5cqw/1.02 var(--serif); }
+  .tile .tt em { font-style: italic; }
+  .tile .glyph { position: absolute; top: 5cqw; right: 5cqw; width: 10cqw; height: 10cqw; z-index: 2; }
+  .tile .mark { position: absolute; left: 9cqw; top: 8cqw; width: 22cqw; height: 13cqw; background: center/contain no-repeat; z-index: 2; }
+
+  /* Dark photo: graded low and warm, light falls on the subject */
+  .d.photo { background: var(--black); }
+  .d.photo .ph { filter: brightness(.68) contrast(1.14) saturate(.72) sepia(.14); }
+  .d.photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(5,5,5,.94) 0%, rgba(5,5,5,.35) 42%, transparent 62%), radial-gradient(120% 80% at 50% 30%, transparent 55%, rgba(0,0,0,.55)); }
+  .d .txt { z-index: 1; }
+  .d .eb { color: var(--gold); }
+  .d .tt { color: var(--ivory); }
+  .d.photo .mark { background-image: url(images/logo-light.png); opacity: .9; }
+
+  /* Dark type: black, gold glow, framed corners */
+  .d.type { background: radial-gradient(90% 60% at 70% 20%, rgba(201,164,92,.2), transparent 70%), #070707; }
+  .d.type .txt { justify-content: center; }
+  .d.type .tt em { background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .corners::before, .corners::after { content: ""; position: absolute; width: 9cqw; height: 9cqw; border: 1px solid var(--gold); z-index: 2; }
+  .corners::before { top: 5cqw; left: 5cqw; border-right: 0; border-bottom: 0; }
+  .corners::after { bottom: 5cqw; right: 5cqw; border-left: 0; border-top: 0; }
+
+  /* Ivory type: paper, ink, gold leaf */
+  .l.type { background: radial-gradient(90% 70% at 20% 0%, #f6f1e6, transparent 70%), var(--ivory); }
+  .l.type .txt { justify-content: center; }
+  .l .eb { color: var(--gold-deep); }
+  .l .tt { color: var(--ink); }
+  .l.type .tt em { color: var(--gold-deep); }
+  .l.type::after { content: ""; position: absolute; left: 9cqw; right: 9cqw; bottom: 9cqw; height: 1px; background: linear-gradient(90deg, var(--gold-deep), transparent); }
+  .l.type .mark { background-image: url(images/logo.png); }
+  .l.type.corners::before, .l.type.corners::after { border-color: var(--gold-deep); }
+
+  /* Ivory photo: passe-partout frame, caption underneath */
+  .l.photo { background: var(--ivory); }
+  .l.photo .ph { inset: 7cqw 7cqw 34cqw; filter: contrast(1.05) saturate(.85) sepia(.06); }
+  .l.photo .txt { padding: 0 7cqw 8cqw; }
+  .l.photo .tt { font-size: 10cqw; }
+  .l.photo .eb { margin-bottom: 3cqw; }
+
+  /* Stat */
+  .tile .num { font: 300 34cqw/.9 var(--serif); margin-bottom: 4cqw; }
+  .d .num { background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .l .num { color: var(--gold-deep); }
+  .tile .sub { font: 400 4.6cqw/1.45 var(--sans); letter-spacing: .14em; text-transform: uppercase; }
+  .d .sub { color: var(--text); }
+  .l .sub { color: #4a463f; }
+  .tile .codes { display: flex; gap: 3cqw; flex-wrap: wrap; margin-top: 5cqw; }
+  .tile .codes span { font: 400 5cqw/1 var(--sans); letter-spacing: .2em; padding: 2.4cqw 3cqw; border: 1px solid; }
+  .d .codes span { color: var(--gold-soft); border-color: var(--hair-strong); }
+  .l .codes span { color: var(--ink); border-color: rgba(138,106,46,.5); }
+
+  /* Close-ups */
+  .closeups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin-top: 44px; }
+  @media (max-width: 860px) { .closeups { grid-template-columns: minmax(0, 1fr); max-width: 440px; } }
+  .closeups figure { margin: 0; }
+  .closeups .tile { aspect-ratio: 4 / 5; box-shadow: 0 24px 60px rgba(0,0,0,.55); }
+  .closeups figcaption { margin-top: 14px; font-size: .86rem; color: var(--muted); line-height: 1.5; }
+  .closeups figcaption b { display: block; color: var(--ivory); font-weight: 400; letter-spacing: .02em; }
+
+  /* Rules */
+  .rules { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 56px; margin-top: 40px; }
+  @media (max-width: 760px) { .rules { grid-template-columns: minmax(0, 1fr); } }
+  .rule { padding: 24px 0; border-top: 1px solid var(--hair); min-width: 0; }
+  .rule h3 { font-size: 1.45rem; margin-bottom: 8px; }
+  .rule p { margin: 0; color: var(--muted); font-size: .94rem; }
+  .swatches { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+  .sw { display: grid; gap: 6px; font-size: .64rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .sw i { width: 64px; height: 40px; border: 1px solid var(--hair); }
+  .typespec { display: flex; flex-wrap: wrap; gap: 26px; align-items: baseline; margin-top: 12px; }
+  .typespec .s1 { font: 300 2.2rem/1 var(--serif); color: var(--ivory); }
+  .typespec .s2 { font: 400 .72rem/1 var(--sans); letter-spacing: .3em; text-transform: uppercase; color: var(--gold); }
+  .verdict { margin-top: 48px; padding: 36px 34px; border: 1px solid var(--hair); background: linear-gradient(160deg, rgba(201,164,92,.08), transparent 55%); position: relative; }
+  .verdict::before, .verdict::after { content: ""; position: absolute; width: 22px; height: 22px; border: 1px solid var(--gold); }
+  .verdict::before { top: -1px; left: -1px; border-right: 0; border-bottom: 0; }
+  .verdict::after { bottom: -1px; right: -1px; border-left: 0; border-top: 0; }
+  .verdict h3 { font-size: 2rem; margin-bottom: 12px; }
+  .verdict p { margin: 0 0 10px; max-width: 70ch; }
+  .verdict p:last-child { margin: 0; color: var(--muted); }
+  footer { padding-block: 40px 60px; color: #6f6a60; font-size: .8rem; border-top: 1px solid var(--hair); }
+  @media (prefers-reduced-motion: no-preference) { .tile { transition: transform .4s ease; } .closeups .tile:hover { transform: translateY(-4px); } }
+</style>
+
+<div class="intro">
+  <div class="wrap">
+    <p class="eyebrow">305 SKY · Instagram direction</p>
+    <h1>Black, gold, ivory. <em class="gold-text">A little mystery.</em></h1>
+    <p class="lead">The same 12 launch posts laid out three ways. The type, gold and photo grading come from the 305 SKY location pages. Pick the grid that feels most like 305 SKY, and every post in the 4-week plan will be built to it.</p>
+    <ul class="vibe"><li>Black</li><li>Champagne gold</li><li>Ivory</li><li>Luxe</li><li>Elite</li><li>Mystery</li></ul>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Three grid options</p>
+    <h2 style="font-size:clamp(2rem,4vw,3rem);line-height:1.05">Same posts. <em>Three rhythms.</em></h2>
+    <div class="options" id="options"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Up close · 4:5 feed size</p>
+    <h2 style="font-size:clamp(2rem,4vw,3rem);line-height:1.05">How a single post <em>reads.</em></h2>
+    <div class="closeups" id="closeups"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">The rules of the look</p>
+    <h2 style="font-size:clamp(2rem,4vw,3rem);line-height:1.05">What keeps it <em>luxe.</em></h2>
+    <div class="rules">
+      <div class="rule"><h3>Palette</h3><p>Three colors and nothing else. Gold is used like jewelry: a word, a line, a corner, never a whole background.</p>
+        <div class="swatches">
+          <span class="sw"><i style="background:#0a0a0a"></i>Black</span>
+          <span class="sw"><i style="background:var(--gold-grad)"></i>Gold</span>
+          <span class="sw"><i style="background:#ece6d9"></i>Ivory</span>
+          <span class="sw"><i style="background:#8a6a2e"></i>Gold on ivory</span>
+        </div></div>
+      <div class="rule"><h3>Type</h3><p>Cormorant Garamond for headlines, light weight, with one word in italic. Jost in spaced capitals for small labels. Never more than about 8 words on the cover.</p>
+        <div class="typespec"><span class="s1">Back in the <em>sky.</em></span><span class="s2">Return to service</span></div></div>
+      <div class="rule"><h3>Photo grading</h3><p>Low key and warm. Bring the exposure down, lift the contrast, mute the color, and let light fall on the subject: a jet at dusk, a lit sign, hands on a panel. Shadows are where the mystery lives.</p></div>
+      <div class="rule"><h3>What we show, and don't</h3><p>Real aircraft, real people, real hangars. Never stock jets, bright clip-art icons, busy collages, or neon. Tail numbers and owner details stay out of frame unless the owner has said yes in writing.</p></div>
+      <div class="rule"><h3>Logo</h3><p>Small and quiet, top left or bottom corner. Light version on dark, standard on ivory. Never over an aircraft's livery, never as a watermark across the photo.</p></div>
+      <div class="rule"><h3>Reel covers</h3><p>Instagram crops Reels to 3:4 in the grid. Every cover is designed to the grid first, so the profile stays composed even when most posts are video.</p></div>
+    </div>
+    <div class="verdict">
+      <h3>Recommendation: <em class="gold-text">Option A, the checkerboard.</em></h3>
+      <p>It gives you the dark, mysterious feel and the bright ivory feel on every screen. The rule is simple enough to follow without a designer: photos go dark, words go ivory, and posts alternate. Because Instagram has 3 columns, simple alternation makes a perfect checkerboard, and deleting or archiving a post only flips the pattern instead of breaking it.</p>
+      <p>Option C (Noir) is the most mysterious, but a whole feed of dark tiles can look heavy and hides the photography. Option B (bands) looks striking but breaks as soon as one post is out of order.</p>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">Concept mockup. Handle, bio and highlights are placeholders to confirm. Photos: FLL ramp, FLL lounge and Vero Beach hangar from the location pages.</div></footer>
+
+<script>
+  const IMG = { hero: "images/hero.jpg", lounge: "images/lounge.jpg", vrb: "images/vrb-hangar.jpg" };
+  const REEL = '<svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M3 8.5h18M9 3l2.5 5.5M14.5 3 17 8.5"/><path d="m10 12 5 3-5 3z" fill="#fff" stroke="none"/></svg>';
+  const CAROUSEL = '<svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="7" y="3" width="14" height="14" rx="2.5"/><path d="M4 7v11.5A2.5 2.5 0 0 0 6.5 21H17"/></svg>';
+
+  // The first 12 posts, newest first (top left). Each one can render dark or ivory.
+  const POSTS = [
+    { kind: "photo", img: "hero", size: "auto 100%", pos: "30% 50%", eb: "Return to service", tt: "Back in the <em>sky.</em>", fmt: "reel" },
+    { kind: "type", eb: "How we work", tt: "Nothing extra without your <em>approval.</em>", fmt: "carousel" },
+    { kind: "photo", img: "vrb", size: "auto 100%", pos: "50% 60%", eb: "Vero Beach · VRB", tt: "Large cabins live <em>inside.</em>", fmt: "carousel" },
+    { kind: "stat", num: "55+", sub: "Years of combined<br>generational experience", eb: "Since 2019" },
+    { kind: "photo", img: "lounge", size: "cover", pos: "50% 40%", eb: "The FLL lounge", tt: "Your seat at <em>FLL.</em>" },
+    { kind: "type", eb: "Squawk of the week · 01", tt: "Small finding. <em>Big save.</em>", fmt: "carousel" },
+    { kind: "photo", img: "hero", size: "auto 120%", pos: "18% 62%", eb: "Pre-buy inspections", tt: "Know before you <em>buy.</em>", fmt: "carousel" },
+    { kind: "codes", eb: "Four locations", tt: "One <em>standard.</em>", codes: ["FLL", "FXE", "BCT", "VRB"] },
+    { kind: "photo", img: "lounge", size: "260%", pos: "66% 34%", eb: "305 SKY · After hours", tt: "The light stays <em>on.</em>", fmt: "reel" },
+    { kind: "type", eb: "Aircraft on ground", tt: "AOG? <em>We answer.</em>", fmt: "reel" },
+    { kind: "photo", img: "vrb", size: "190%", pos: "50% 4%", eb: "12,000+ sq ft · VRB", tt: "Room for the jets that <em>need it.</em>" },
+    { kind: "type", eb: "The people behind the work", tt: "Meet the <em>crew.</em>", fmt: "carousel" }
+  ];
+
+  function tile(p, tone) {
+    const t = tone === "dark" ? "d" : "l";
+    const cls = p.kind === "photo" ? "photo" : "type";
+    const corners = p.kind !== "photo" ? " corners" : "";
+    const glyph = p.fmt === "reel" ? REEL : p.fmt === "carousel" ? CAROUSEL : "";
+    let inner = "";
+    if (p.kind === "photo") {
+      inner += `<div class="ph" style="background-image:url(${IMG[p.img]});background-size:${p.size};background-position:${p.pos}"></div>`;
+      if (t === "d") inner += '<span class="mark"></span>';
+      inner += `<div class="txt"><div class="eb">${p.eb}</div><div class="tt">${p.tt}</div></div>`;
+    } else if (p.kind === "stat") {
+      inner += `<span class="mark"></span><div class="txt"><div class="eb">${p.eb}</div><div class="num">${p.num}</div><div class="sub">${p.sub}</div></div>`;
+    } else if (p.kind === "codes") {
+      inner += `<span class="mark"></span><div class="txt"><div class="eb">${p.eb}</div><div class="tt">${p.tt}</div><div class="codes">${p.codes.map(c => `<span>${c}</span>`).join("")}</div></div>`;
+    } else {
+      inner += `<span class="mark"></span><div class="txt"><div class="eb">${p.eb}</div><div class="tt">${p.tt}</div></div>`;
+    }
+    const lightGlyph = t === "l" && cls === "type" ? glyph.replaceAll("#fff", "#8a6a2e") : glyph;
+    return `<div class="tile ${t} ${cls}${corners}">${lightGlyph}${inner}</div>`;
+  }
+
+  const OPTIONS = [
+    { key: "A", name: "Checkerboard", pick: true,
+      blurb: "Posts alternate dark and ivory. Photos are dark and graded; words sit on ivory. Every screen shows both moods.",
+      tone: (p, i) => i % 2 === 0 ? "dark" : "light" },
+    { key: "B", name: "Bands",
+      blurb: "Rows of three alternate: a dark row, then an ivory row. Bold and editorial, but you have to post in sets of three.",
+      tone: (p, i) => Math.floor(i / 3) % 2 === 0 ? "dark" : "light" },
+    { key: "C", name: "Noir",
+      blurb: "Everything dark, lit only by gold and ivory type. The most mysterious and the most exclusive, at the cost of contrast.",
+      tone: () => "dark" }
+  ];
+
+  // In Bands, the photo/type order is reshuffled so each row mixes both, like a real feed would.
+  const ORDER = { A: POSTS, B: [0, 3, 2, 1, 4, 5, 6, 7, 8, 9, 10, 11].map(i => POSTS[i]), C: POSTS };
+
+  document.getElementById("options").innerHTML = OPTIONS.map(o => `
+    <article class="option${o.pick ? " pick" : ""}">
+      <header><span class="tag">Option ${o.key}</span><h3>${o.name}</h3><p>${o.blurb}</p></header>
+      <div class="phone">
+        <div class="ig-head">
+          <div class="ig-top"><span>305sky</span><span>•••</span></div>
+          <div class="ig-prof">
+            <div class="avatar" role="img" aria-label="305 SKY logo"></div>
+            <div class="bio"><b>305 SKY</b><span class="cat">Aircraft maintenance &amp; management</span><br>One standard, from the flight deck to the hangar floor.<br>FLL · FXE · BCT · VRB</div>
+          </div>
+          <div class="highlights">
+            <span class="hl"><i data-g="A"></i>AOG</span><span class="hl"><i data-g="P"></i>Pre-Buy</span><span class="hl"><i data-g="H"></i>Hangars</span><span class="hl"><i data-g="C"></i>Crew</span><span class="hl"><i data-g="L"></i>Lounge</span>
+          </div>
+        </div>
+        <div class="ig-tabs"><span>POSTS</span><span>REELS</span><span>TAGGED</span></div>
+        <div class="grid">${ORDER[o.key].map((p, i) => tile(p, o.tone(p, i))).join("")}</div>
+      </div>
+    </article>`).join("");
+
+  const CLOSE = [
+    { p: POSTS[0], tone: "dark", b: "Dark photo · Reel cover", c: "Golden hour on the FLL ramp, graded low. Logo small, top left. Gold label, ivory headline." },
+    { p: POSTS[1], tone: "light", b: "Ivory type · Carousel cover", c: "Paper-white ivory, ink headline, one word in gold. Slide 2 onward explains how quotes and approvals work." },
+    { p: POSTS[2], tone: "light", b: "Ivory photo · framed", c: "For Option B's ivory rows: the photo sits in an ivory frame with the caption underneath, like a gallery print." }
+  ];
+  document.getElementById("closeups").innerHTML = CLOSE.map(x => `<figure>${tile(x.p, x.tone)}<figcaption><b>${x.b}</b>${x.c}</figcaption></figure>`).join("");
+</script>
