@@ -1,6 +1,6 @@
 # 305 SKY location pages: developer handoff
 
-Two standalone, SEO-ready location pages in the 305 SKY style (black, champagne gold,
+Three standalone, SEO-ready location pages in the 305 SKY style (black, champagne gold,
 Cormorant Garamond headings, Jost body text). Neither page needs a build step. Each one
 is a single HTML file with its CSS inline and a few lines of JavaScript for the header
 and scroll fades. The content stays visible if the JavaScript doesn't run.
@@ -9,15 +9,17 @@ and scroll fades. The content stays visible if the JavaScript doesn't run.
 |---|---|---|
 | `aircraft-management-maintenance-fort-lauderdale.html` | `/aircraft-maintenance-management-fort-lauderdale-fl/` | aircraft maintenance / aircraft management Fort Lauderdale |
 | `mid-heavy-jet-maintenance-vero-beach.html` | `/mid-heavy-jet-maintenance-vero-beach-fl/` | mid / heavy jet maintenance Vero Beach, aircraft maintenance / management Vero Beach |
+| `aog-maintenance-aircraft-management-boca-raton.html` | `/aog-maintenance-aircraft-management-boca-raton-fl/` | AOG maintenance, aircraft management, pre-buy inspection, records review, Garmin avionics installation Boca Raton |
 
 The pages link to each other (Vero Beach mention on the FLL page, "Two Florida
 locations" section on the VRB page, and both footers). **Keep those URLs**, or update
 the links in both files if you change them. Each published page must have a canonical
 URL that matches where it is served.
 
-305 SKY has four locations: FLL, FXE, BCT and VRB. FLL and VRB have pages now. FXE and BCT
-are listed on both pages (heritage figures, locations grid, service areas, FAQ, footer) as
-plain text. When they get their own pages, turn those mentions into links.
+305 SKY has four locations: FLL, FXE, BCT and VRB. FLL, VRB and BCT have pages, and they
+link to each other. FXE is listed on every page (heritage figures, locations grid, service
+areas, FAQ, footer) as plain text. When it gets its own page, turn those mentions into links.
+The Boca Raton page deliberately doesn't advertise hangar space there.
 
 Upload alongside the pages:
 
@@ -45,6 +47,8 @@ broken. Use compressed JPG/WebP.
 | `images/lounge.jpg` | FLL | FLL lobby | ✅ Included |
 | `images/vrb-hangar.jpg` | VRB | Vero Beach hangar with the 305 SKY sign | ✅ Included (a higher-resolution original, ≥ 2400px wide, will look sharper on large screens) |
 | `images/vrb-work.jpg` | VRB | Technicians at work in the Vero Beach hangar (~1400×1800) | Needed |
+| `images/bct-hero.jpg` | BCT | Aircraft at Boca Raton Airport, or the team at work (wide, ≥ 2000×1000) | Needed |
+| `images/bct-aog.jpg` | BCT | AOG / technician or avionics work (~1400×1800) | Needed |
 
 ## 1. Fill in the placeholders (required before publishing)
 
@@ -56,11 +60,12 @@ structured-data block at the top.
 | `{{DOMAIN}}` | `305sky.com` | No `https://`, no trailing slash |
 | `{{PHONE_DISPLAY}}` / `{{PHONE_E164}}` | `(954) 555-0123` / `+19545550123` | FLL phone |
 | `{{VRB_PHONE_DISPLAY}}` / `{{VRB_PHONE_E164}}` | `(772) 555-0123` / `+17725550123` | Vero Beach phone. A local 772 number helps local ranking; otherwise use the main line |
+| `{{BCT_PHONE_DISPLAY}}` / `{{BCT_PHONE_E164}}` | `(561) 555-0123` / `+15615550123` | Boca Raton phone (also the AOG line on that page). A local 561 number helps local ranking; otherwise use the main line |
 | `{{VRB_STREET_ADDRESS}}`, `{{VRB_ZIP}}` | | Vero Beach hangar address. Also update the map `q=` query in the VRB page, which currently points at Vero Beach Regional Airport |
 | `{{EMAIL}}` | `service@305sky.com` | |
 | `{{OPENS_24H …}}` / `{{CLOSES_24H …}}` | `08:00` / `17:00` | Must match each Google Business Profile |
 | `{{HOURS_DISPLAY …}}` | `Mon–Fri 8:00 am – 5:00 pm · AOG by phone` | |
-| `{{GOOGLE_BUSINESS_PROFILE_URL}}`, `{{VRB_GOOGLE_BUSINESS_PROFILE_URL}}`, `{{LINKEDIN_OR_INSTAGRAM_URL}}` | | Delete any line you don't have |
+| `{{GOOGLE_BUSINESS_PROFILE_URL}}`, `{{VRB_GOOGLE_BUSINESS_PROFILE_URL}}`, `{{BCT_GOOGLE_BUSINESS_PROFILE_URL}}`, `{{LINKEDIN_OR_INSTAGRAM_URL}}` | | Delete any line you don't have |
 
 **Content to confirm with 305 SKY before launch:**
 - **FLL:** the fleet list comes from job history. The management services, owner
@@ -70,6 +75,10 @@ structured-data block at the top.
   worked inside, and full-service management are from 305 SKY. The page assumes the
   hangar is at Vero Beach Regional (VRB); correct it if not. The service-area airport
   lists are suggestions.
+- **BCT:** office at 3300 Airport Rd, Ste 202, Boca Raton, FL 33431. Services: AOG
+  maintenance, aircraft management, pre-buy inspections, records review and Garmin avionics
+  installations. The avionics section names product categories only (displays, navigators,
+  autopilots, ADS-B). Add specific Garmin models or dealer status only if 305 SKY confirms them.
 - Each FAQ appears twice, once visible and once in the structured data. Edit both.
 
 **Launch checklist (developer):**
