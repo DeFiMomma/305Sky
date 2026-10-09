@@ -58,3 +58,14 @@ never as a tiled watermark. The palm + "305 Sky" mark can appear lit (as on the 
 ## Facebook & LinkedIn
 Same templates at 4:5 or 1:1. LinkedIn document carousels use the ivory type template for text pages and dark photo
 pages between them. Cover/banner images: dark photo template, wide crop, logo left, one line of serif type.
+
+## Lessons from the current feed (@305skymaintenance, reviewed 2026-10-09)
+Keep: black + gold base, real photography (Challenger at sunset, leather cabin, techs on the King Air, Garmin panel),
+light serif headlines, the 15-year-client testimonial. Change:
+- No heavy condensed all-caps headlines ("GROUNDED?", "WE'RE HIRING!") — they read promotional, not elite.
+- No www.305sky.com box or large centered logo on every tile; website lives in the bio.
+- No paragraphs on the image; ≤ 8 words, detail goes in the caption.
+- No globe icons, phone mockups or stock-style renders.
+- Blur tail numbers (N604XT was readable on a past post).
+The grid studio (`marketing/instagram-grid/index.html`, published at https://claude.ai/artifact/5qxY29js1RNXX4cK8SYZr3)
+shows the current feed beside options A/B/C and lets the owner edit posts.
