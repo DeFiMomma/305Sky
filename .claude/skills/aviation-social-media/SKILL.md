@@ -31,6 +31,10 @@ The approved working strategy is the doc **305 SKY Social Media Strategy**
 planning calendars; it sets positioning ("Your aircraft, in family hands."), themes and mix, the weekly rhythm
 (IG 4 / LinkedIn 3 / FB 3), Johnley's capture plan, KPIs and guardrails.
 
+Current calendar: doc **305 SKY Content Calendar: Oct 12 – Nov 8, 2026**
+(https://claude.ai/code/artifact/d95a2dcc-4f3b-43ff-acfc-902caccef42e): 42 posts (IG 18 / LinkedIn 12 / FB 12),
+checkerboard tones starting Dark on Oct 12, all photos from the Drive library. Continue numbering from Instagram 19.
+
 ## Core principles
 
 1. **Value first, sell second.** Roughly 4 of every 5 posts teach, show or celebrate; at most
