@@ -38,7 +38,9 @@ Three tested options (see mockup):
   With 3 columns this always forms a checkerboard, and an archived post only flips the pattern.
 - **B · Bands:** rows of three alternate dark/ivory. Striking but must be posted in sets of three.
 - **C · Noir:** all dark. Most mysterious, but heavy and lower contrast.
-Until the owner picks, plan with **A** and note the tone (Dark/Ivory) of every post in the calendar.
+**Chosen by the owner on 2026-10-09: Option A, Checkerboard.** Note the tone (Dark/Ivory) of every post in the calendar.
+Refinements: ivory tiles are mostly words but may hold a framed photo for variety; Reels covers follow their slot's tone;
+when a post is archived, re-check that the newest 3 rows still alternate.
 
 ## Post templates
 | Template | Tone | Layout |
