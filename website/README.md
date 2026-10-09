@@ -39,7 +39,7 @@ broken. Use compressed JPG/WebP.
 | `images/hero.jpg` | FLL | Jet on the ramp at the FLL hangar (wide, ≥ 2000×1000) | **Needed:** the sunset Challenger photo |
 | `images/engine.jpg` | FLL | Technician / engine work (~1400×1800) | Needed |
 | `images/lounge.jpg` | FLL | FLL lobby | ✅ Included |
-| `images/vrb-hangar.jpg` | VRB | Large-cabin jet in or at the Vero Beach hangar (wide, ≥ 2000×1000) | Needed |
+| `images/vrb-hangar.jpg` | VRB | Vero Beach hangar with the 305 SKY sign | ✅ Included (a higher-resolution original, ≥ 2400px wide, will look sharper on large screens) |
 | `images/vrb-work.jpg` | VRB | Technicians at work in the Vero Beach hangar (~1400×1800) | Needed |
 
 ## 1. Fill in the placeholders (required before publishing)

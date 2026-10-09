@@ -398,6 +398,22 @@
     header.site .btn::after { display: none; }
   }
   /* Vero Beach additions */
+  /* Hero: keep the 305 SKY hangar sign clear above the headline */
+  .hero.vrb { padding-top: 330px; }
+  .hero.vrb .hero-media { top: 84px; }
+  .hero.vrb .hero-media img { object-position: 50% 0%; }
+  .hero.vrb::before {
+    -webkit-mask-image: linear-gradient(180deg, transparent 0, transparent 20%, #000 34%);
+            mask-image: linear-gradient(180deg, transparent 0, transparent 20%, #000 34%);
+  }
+  /* Phones: the photo sits above the headline at its natural shape instead of behind it */
+  @media (max-width: 760px) {
+    .hero.vrb { display: block; min-height: 0; padding-top: 84px; }
+    .hero.vrb::before { display: none; }
+    .hero.vrb .hero-media { position: relative; top: 0; aspect-ratio: 4 / 3; }
+    .hero.vrb .hero-media::after { content: ""; position: absolute; inset: auto 0 0; height: 40%; background: linear-gradient(0deg, var(--black), transparent); }
+    .hero.vrb .wrap { margin-top: 12px; }
+  }
   .capacity { display: grid; grid-template-columns: 1fr 1.1fr; gap: 90px; align-items: center; }
   @media (max-width: 920px) { .capacity { grid-template-columns: 1fr; gap: 56px; } }
   .stat { border: 1px solid var(--hair); padding: 56px 48px; position: relative; background: linear-gradient(160deg, rgba(201,164,92,.08), transparent 60%); }
@@ -445,10 +461,9 @@
 </header>
 
 <main>
-  <section class="hero" aria-labelledby="page-title">
-    <div class="hero-media" aria-hidden="true">
-      <!-- Vero Beach hangar photo, ideally a large-cabin jet inside: save as images/vrb-hangar.jpg (wide, approx. 2000×1000 or larger) -->
-      <img class="slot" src="images/vrb-hangar.jpg" alt="" fetchpriority="high" onload="this.classList.add('loaded')" onerror="this.remove()">
+  <section class="hero vrb" aria-labelledby="page-title">
+    <div class="hero-media">
+      <img class="slot" src="images/vrb-hangar.jpg" width="1448" height="1086" alt="305 SKY hangar in Vero Beach, Florida, with a Dassault Falcon business jet and turboprops inside" fetchpriority="high" onload="this.classList.add('loaded')" onerror="this.remove()">
     </div>
     <div class="wrap">
       <p class="eyebrow">Vero Beach &middot; Treasure Coast &middot; VRB</p>
