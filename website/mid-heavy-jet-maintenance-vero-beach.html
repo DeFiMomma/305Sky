@@ -42,6 +42,7 @@
       "@id": "https://{{DOMAIN}}/mid-heavy-jet-maintenance-vero-beach-fl/#location",
       "name": "305 SKY",
       "legalName": "305 SKY LLC",
+      "foundingDate": "2019",
       "description": "Mid-size and heavy business jet maintenance and full-service aircraft management from a 12,000+ square foot hangar in Vero Beach, Florida.",
       "url": "https://{{DOMAIN}}/mid-heavy-jet-maintenance-vero-beach-fl/",
       "logo": "https://{{DOMAIN}}/305sky-logo.png",
@@ -153,6 +154,11 @@
           "@type": "Question",
           "name": "Do you have other locations?",
           "acceptedAnswer": { "@type": "Answer", "text": "Yes. 305 SKY also operates at Fort Lauderdale-Hollywood International Airport (FLL), so owners who fly between South Florida and the Treasure Coast can rely on one team at both ends." }
+        },
+        {
+          "@type": "Question",
+          "name": "How long has 305 SKY been in business?",
+          "acceptedAnswer": { "@type": "Answer", "text": "305 SKY was founded in 2019, and our team brings more than 55 years of combined generational experience in aviation maintenance and aircraft management." }
         }
       ]
     }
@@ -442,6 +448,15 @@
   .locations p { color: var(--muted); font-size: .95rem; }
   .locations .here { font-size: .64rem; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); }
   @media (max-width: 760px) { .locations { grid-template-columns: 1fr; } .locations article { padding: 40px 26px; } }
+
+  /* Heritage */
+  .heritage { display: grid; grid-template-columns: 1fr 1.15fr; gap: 90px; align-items: center; }
+  @media (max-width: 920px) { .heritage { grid-template-columns: 1fr; gap: 48px; } }
+  .figures { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--hair); border: 1px solid var(--hair); margin: 0; padding: 0; list-style: none; }
+  .figures li { background: var(--panel); padding: 38px 32px 34px; }
+  .figures b { display: block; font: 300 clamp(2.8rem, 5vw, 3.8rem)/1 var(--serif); letter-spacing: -.01em; margin-bottom: 14px; }
+  .figures span { display: block; font-size: .66rem; letter-spacing: .28em; text-transform: uppercase; color: var(--muted); line-height: 1.6; }
+  @media (max-width: 420px) { .figures li { padding: 30px 20px 28px; } }
 </style>
 <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -487,6 +502,22 @@
 
   <div class="wrap crumbs"><a href="/">Home</a><span>/</span>Mid &amp; Heavy Jet Maintenance, Vero Beach</div>
   <hr class="rule">
+
+  <section class="panel" aria-labelledby="heritage-title">
+    <div class="wrap heritage">
+      <div class="reveal">
+        <p class="eyebrow">Our Heritage</p>
+        <h2 id="heritage-title">A young company. <em class="gold-text">A long lineage.</em></h2>
+        <p class="lead">305 SKY was founded in 2019, but the people caring for your aircraft bring more than 55 years of combined generational experience in aviation. It's knowledge earned on hangar floors and flight lines, and it shows in every inspection, repair and owner relationship.</p>
+      </div>
+      <ul class="figures reveal" aria-label="305 SKY at a glance">
+        <li><b class="gold-text">2019</b><span>Founded</span></li>
+        <li><b class="gold-text">55+</b><span>Years of combined generational experience</span></li>
+        <li><b class="gold-text">2</b><span>Florida locations &middot; FLL &amp; VRB</span></li>
+        <li><b class="gold-text">1</b><span>Point of contact for your aircraft</span></li>
+      </ul>
+    </div>
+  </section>
 
   <section id="hangar" aria-labelledby="hangar-title">
     <div class="wrap capacity">
@@ -659,6 +690,10 @@
         <details>
           <summary>Do you have other locations?</summary>
           <p>Yes. 305 SKY also operates at Fort Lauderdale-Hollywood International Airport (FLL), so owners who fly between South Florida and the Treasure Coast can rely on one team at both ends.</p>
+        </details>
+        <details>
+          <summary>How long has 305 SKY been in business?</summary>
+          <p>305 SKY was founded in 2019, and our team brings more than 55 years of combined generational experience in aviation maintenance and aircraft management.</p>
         </details>
       </div>
     </div>

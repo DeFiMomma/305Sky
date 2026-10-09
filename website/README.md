@@ -78,9 +78,9 @@ structured-data block at the top.
 - **Bing:** verify the site in Bing Webmaster Tools and submit the sitemap. ChatGPT search
   draws on Bing's index.
 - **Sitemap:** add both page URLs to the site's `sitemap.xml`.
-- **Credentials (recommended):** a short trust strip (FAA Part 145 certificate number,
-  A&P/IA technicians, years in business, insurance) is the biggest remaining content gap.
-  305 SKY will supply the facts.
+- **Credentials (optional next step):** both pages have an "Our Heritage" section (founded
+  2019, 55+ years of combined generational experience). If 305 SKY holds an FAA Part 145
+  certificate, A&P/IA credentials or OEM training, add them there. Only list what's true.
 
 After publishing, run each URL through Google's Rich Results Test
 (https://search.google.com/test/rich-results) and submit both in Google Search Console.
