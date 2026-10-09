@@ -1,0 +1,14 @@
+employee,rate,withhold_hours,note
+Robert Gil,40.00,0,
+Nestor Marrero,20.00,0,Spelled "Nestor Murroro" on the rate sheet
+Marco Paz,26.00,0,
+Eduardo Gutierrez,28.00,0,
+Enriquillo Munoz,35.00,0,
+Tom Marshal,18.00,0,
+Mateo Moreno,20.00,10,Rate sheet note: "withold 10 Hours" (confirm whether one-time or every period)
+Rodrigo Cunha,30.00,0,
+Marcelo Rodrigues,30.00,0,
+Mike Markley,60.00,0,
+Christopher Perez,,0,RATE NOT ON RATE SHEET
+Johnley Theagene,,0,RATE NOT ON RATE SHEET
+Ryan Willis,,0,RATE NOT ON RATE SHEET
