@@ -68,6 +68,20 @@ structured-data block at the top.
   lists are suggestions.
 - Each FAQ appears twice, once visible and once in the structured data. Edit both.
 
+**Launch checklist (developer):**
+- **Maps:** replace each page's map `<iframe>` with the embed code from that location's
+  Google Business Profile (Google Maps → the 305 SKY listing → Share → Embed a map), so
+  the map is tied to the listing rather than a plain address search. Keep the iframe
+  inside the existing `.map` wrapper so the dark styling still applies.
+- **AI search crawlers:** make sure the site's `robots.txt` doesn't block `OAI-SearchBot`,
+  `GPTBot`, `PerplexityBot`, `ClaudeBot` or `Google-Extended`. Some site builders block them by default.
+- **Bing:** verify the site in Bing Webmaster Tools and submit the sitemap. ChatGPT search
+  draws on Bing's index.
+- **Sitemap:** add both page URLs to the site's `sitemap.xml`.
+- **Credentials (recommended):** a short trust strip (FAA Part 145 certificate number,
+  A&P/IA technicians, years in business, insurance) is the biggest remaining content gap.
+  305 SKY will supply the facts.
+
 After publishing, run each URL through Google's Rich Results Test
 (https://search.google.com/test/rich-results) and submit both in Google Search Console.
 
