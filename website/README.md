@@ -15,6 +15,10 @@ locations" section on the VRB page, and both footers). **Keep those URLs**, or u
 the links in both files if you change them. Each published page must have a canonical
 URL that matches where it is served.
 
+305 SKY has four locations: FLL, FXE, BCT and VRB. FLL and VRB have pages now. FXE and BCT
+are listed on both pages (heritage figures, locations grid, service areas, FAQ, footer) as
+plain text. When they get their own pages, turn those mentions into links.
+
 Upload alongside the pages:
 
 ```
