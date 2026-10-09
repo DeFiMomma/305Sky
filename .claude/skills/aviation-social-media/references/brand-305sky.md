@@ -5,8 +5,20 @@ written as `[CONFIRM: …]` in drafts until the owner verifies it, then moved up
 
 ## Confirmed (company records + the approved location pages on branch `claude/vibrant-noether-yct8df`)
 - Legal name: **305 SKY LLC** — brand written "305 SKY" (wordmark: gold "305", script "Sky", palm tree, small jet).
-- **Founded 2019.** Team brings **55+ years of combined generational experience**. Line used on the site:
-  "A young company. A long lineage."
+- Website **www.305sky.com** · Phone **305-326-3498** · Instagram **@305skymaintenance** · Facebook **305 Sky** ·
+  LinkedIn **linkedin.com/company/305-sky**.
+- **Founded 2019. A family business: third-generation aviators.** The founder's first son is named **Jet**.
+  "The aviation bloodline runs deep at 305 SKY." **55+ years of generational family experience.**
+  Site line: "A young company. A long lineage."
+- **Team of 15** across four locations.
+- **Regulatory status: an aircraft maintenance facility, NOT a Part 145 repair station.** Part 145 certification is
+  in progress, targeted Q1 2027. Never write "Part 145", "certified repair station" or "FAA-certified facility" until
+  the owner confirms the certificate is issued. (When it is, that's a milestone post series.)
+- **Why clients choose 305 SKY (owner's words):** "We work hand in hand with the clients. Our clients become friends
+  and family. They have our cell phone numbers and can call anytime. They don't get gatekept, and they always reach an owner."
+  → This is the #1 differentiator: **direct access to the owners. No gatekeepers.**
+- Comfortable saying publicly: **"transparent quotes" / "no surprise invoices"** — yes.
+- **AOG mobile response radius: 30 miles** from each location.
 - **Four Florida locations — "Four locations. One standard."**
   - **FLL** Fort Lauderdale–Hollywood Intl, 240 SW 34th St, Fort Lauderdale, FL 33315 — aircraft management +
     in-house maintenance, with an **owner lounge**.
@@ -23,8 +35,8 @@ written as `[CONFIRM: …]` in drafts until the owner verifies it, then moved up
 - Maintenance: scheduled inspections & preventive maintenance, unscheduled repairs & troubleshooting, **AOG support**
   (AOG jobs take priority), pre-purchase inspections & records review, avionics & systems, cabin interiors.
   **Exterior painting is coordinated with partners, not done in-house** — never imply 305 SKY paints.
-- Aircraft worked on: Bombardier Challenger 604, Global Express (BD-700), Beechcraft King Air B300, Mitsubishi MU-2B,
-  Dassault Falcon 900, Gulfstream G450 — "and many more types".
+- **Aircraft serviced:** Citation, Challenger, Falcon, Learjet, King Air, Beechjet, Gulfstream, Global, Hawker
+  (also MU-2B per job history). **FLL/FXE/BCT: light to mid-size jets and turboprops. VRB: mid-size to heavy jets.**
 - **How we work — "Clear quotes. No surprises."** Inspections quoted at a flat rate to the manufacturer's program;
   anything found is priced and sent first — "Nothing extra without your approval"; fly away with an itemized invoice
   and completed logbook entries. Internally every quote is tracked against actual work and every price change needs a reason.
@@ -32,27 +44,26 @@ written as `[CONFIRM: …]` in drafts until the owner verifies it, then moved up
 - Site taglines to reuse: "One standard of care, from the flight deck to the hangar floor." · "So you simply fly." ·
   "Room for the jets that need it." · "When your aircraft is grounded, we answer." · "Know before you buy."
 
-## To confirm with the owner (ask before strategy is final)
-- Repair station certificate? (FAA Part 145 number, EASA, other) — never claim "Part 145" until confirmed.
-- OEM authorizations/training; Garmin dealer status.
-- FXE: what happens there; AOG response radius; hours; 24/7 AOG line?
-- Instagram/LinkedIn/Facebook handles (mockups use `305sky` as a placeholder).
-- Team: number of A&Ps/IAs, years of experience, founder story, leadership names & photos.
-- What customers say: reviews, testimonials (with permission), repeat-customer stats, turnaround records.
-- The real "why us" in the owner's words (top 3 differentiators).
-- Website URL, phone, email, booking/quote link, existing handles and current follower counts.
-- Who on the team can capture photos/video weekly, and who approves posts.
-- Customers who allow their aircraft/name to be featured.
+## To confirm with the owner
+- Founder/owner names and whether they want to be named and pictured; Jet's role (in the business? age? OK to feature?).
+- Team: names, roles, A&P/IA holders, years each — and consent to appear on social.
+- FXE: what happens there; hours; is AOG answered 24/7?
+- OEM training; Garmin dealer status.
+- Reviews/testimonials (with permission), repeat-customer stats, turnaround records.
+- Customers who allow their aircraft/name to be featured (keep a permission log).
+- Current follower counts on each platform (for baselines).
+- Who approves posts before they go live. Content capture: **Johnley** is the likely weekly photo/video lead.
 
-## Positioning (draft — refine once confirmed)
-> 305 SKY brings private aircraft management and in-house maintenance together under one standard,
-> at four airports on Florida's east coast: one point of contact, clear quotes with nothing extra
-> without your approval, and a hangar that fits the jets that need it.
+## Positioning
+> **Your aircraft, in family hands.** 305 SKY is a third-generation aviation family that manages and maintains
+> private aircraft at four airports on Florida's east coast. You get the owners' cell numbers, clear quotes with
+> nothing extra without your approval, and one standard from the flight deck to the hangar floor.
 
 Proof pillars:
-1. **One standard, one point of contact** — management + maintenance under one roof, four locations, one set of records.
+1. **Family, not a front desk** — third-generation aviators, 55+ years, owners on speed dial, clients become family.
 2. **Clear quotes. No surprises.** — flat-rate inspections, nothing extra without approval, itemized invoices.
-3. **Room and readiness** — 12,000+ sq ft VRB hangar for large-cabin jets; AOG answered from FLL to VRB.
+3. **One standard, four airports** — management + maintenance under one roof; FLL, FXE, BCT for light/mid jets and
+   turboprops, VRB's 12,000+ sq ft hangar for mid/heavy jets; AOG within 30 miles.
 
 ## Voice
 - **Confident, calm, precise.** The tone of a trusted chief inspector, not a salesperson.
@@ -60,6 +71,7 @@ Proof pillars:
 - Use correct terminology (A&P, IA, AOG, RTS, squawk, discrepancy, phase/inspection, logbook entries),
   and explain it in one line on Instagram/Facebook where owners may not know it.
 - Write to "you" (the owner, the DOM). Short sentences. Specific numbers.
+- Warmth is the twist on luxury: elite and discreet, but personal ("call us" means a real person, often an owner).
 - Avoid: "world-class", "unmatched", "second to none", "passion for aviation", fear-mongering about safety,
   disparaging other shops.
 

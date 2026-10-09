@@ -42,8 +42,25 @@ needs the user's screenshots, captions or analytics. Add new findings with date 
   - Adopt: earned third-party proof (press mentions, rankings, awards) reshared; newsletter-to-social pipeline.
   - Opportunity: brokers need pre-buy inspections — LinkedIn content on thorough, neutral pre-buys targets them.
 
+### Family-owned MRO lineage (closest analogues to 305 SKY's story) — Oct 2026
+- **Duncan Aviation** markets itself as the "largest *family-owned* MRO" — heritage + family is a proven premium
+  positioning in this industry, at the very top of the market.
+- **Elliott Aviation** built its story on a 1936 founder (Herb Elliott); note that a 2020 investor deal makes
+  "family-owned" contestable for them — 305 SKY's family story is current and literal (third generation, a son named Jet).
+- **Constant Aviation** runs recruiting as a content pillar: apprenticeships, paid certification, pay rates,
+  Women in Aviation partnerships, AOG mobile-response announcements.
+- Family-business marketing research: legacy stories create connection; the younger generation runs day-to-day
+  posting while elders set purpose (fits Johnley as capture lead + owners approving).
+
+### South Florida landscape — Oct 2026
+- FLL/FXE maintenance players found in press: Banyan (FXE, FBO + MRO), New World Aviation (Gulfstream MRO at FLL),
+  Sheltair-hosted MROs at FLL, QAA (accessories, Part 145). None surfaced with a notable social presence in search.
+- **305 SKY itself does not appear in web search results for "305 Sky aviation Fort Lauderdale"** — search visibility
+  (Google Business Profiles, directory citations, reviews, website links from social) is part of the social plan's job.
+
 ## Takeaways for 305 SKY
 1. Nobody in South Florida MRO owns "transparent, premium, personal" on social — that's the gap.
+   The family story (third-generation aviators, owners on speed dial) is the one thing no competitor can copy.
 2. Charter/sales brands win on visual consistency; MROs win on proof and people. Combine both.
 3. LinkedIn is where contracts come from; Instagram is where the brand becomes desirable and
    recruits; Facebook is where owners and the local community recognise you.

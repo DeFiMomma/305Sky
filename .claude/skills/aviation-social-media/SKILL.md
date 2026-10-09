@@ -25,6 +25,12 @@ and sales brands at the top of the category.
 | `references/industry-benchmarks.md` | Strategy work, competitor questions, "make it look like X". What the leaders in MRO, management, charter and sales do. |
 | `references/aviation-guardrails.md` | Before finalizing anything. Privacy (tail numbers, owners), regulatory claims, safety imagery. |
 
+## Current strategy
+The approved working strategy is the doc **305 SKY Social Media Strategy**
+(https://claude.ai/code/artifact/55d1bcaa-5c2c-45a2-a2d9-12ba0d7f40ed, created 2026-10-09). Read it with the docs tools before
+planning calendars; it sets positioning ("Your aircraft, in family hands."), themes and mix, the weekly rhythm
+(IG 4 / LinkedIn 3 / FB 3), Johnley's capture plan, KPIs and guardrails.
+
 ## Core principles
 
 1. **Value first, sell second.** Roughly 4 of every 5 posts teach, show or celebrate; at most
