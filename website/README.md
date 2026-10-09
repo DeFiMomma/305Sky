@@ -47,7 +47,7 @@ broken. Use compressed JPG/WebP.
 | `images/lounge.jpg` | FLL | FLL lobby | ✅ Included |
 | `images/vrb-hangar.jpg` | VRB | Vero Beach hangar with the 305 SKY sign | ✅ Included (a higher-resolution original, ≥ 2400px wide, will look sharper on large screens) |
 | `images/vrb-work.jpg` | VRB | Technicians at work in the Vero Beach hangar (~1400×1800) | Needed |
-| `images/bct-hero.jpg` | BCT | Aircraft at Boca Raton Airport, or the team at work (wide, ≥ 2000×1000) | Needed |
+| `images/bct-hero.mp4`, `bct-hero.webm`, `bct-hero-poster.jpg` | BCT | Muted looping video of the BCT ramp (tail numbers blurred), with a poster still | ✅ Included. Upload all three; the page plays WebM where supported and falls back to MP4 |
 | `images/bct-aog.jpg` | BCT | AOG / technician or avionics work (~1400×1800) | Needed |
 
 ## 1. Fill in the placeholders (required before publishing)
