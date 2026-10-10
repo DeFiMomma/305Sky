@@ -14,7 +14,7 @@ aircraft-type pages in normal Google results.
 |---|---|---|---|
 | **VRB** | Vero Beach Aircraft Maintenance | **High** | Small market, few competing profiles. A complete profile, 15–25 good reviews and a strong VRB page usually wins here. |
 | **FLL** | SEAL Aviation | **Medium** | SEAL is a specialist (fuel leaks, NDT, structural) and is close to you, so distance doesn't settle it. You can win the general maintenance, inspection, aircraft-type and AOG searches near FLL; SEAL will likely keep its specialty searches. |
-| **BCT** | Boca Aircraft Maintenance, Reliable Jet | **Medium-low, until the address is fixed** | Two established Part 145 shops on the same airport road. Your website shows **3300 Airport Rd, the same address as Boca Aircraft Maintenance**. Google usually shows only one profile at a shared address, so yours can be hidden no matter what else you do. Fix that first (Day 1–3). |
+| **BCT** | Boca Aircraft Maintenance, Reliable Jet | **Medium-low** | Two established Part 145 shops on the same airport road. You're at 3300 Airport Rd **Ste 202**, the same building as Boca Aircraft Maintenance (Hangar 2). Google sometimes shows only one profile per building, so "Ste 202" must appear on the profile, the website and every listing (Day 2). |
 | **OPF** | n/a | **No map pack without a staffed location there** | Google only allows a profile where you have a staffed location with signage. Until then, rank organically with an OPF page (Days 22–28). |
 
 Honest expectations:
@@ -100,21 +100,27 @@ invoices, the email signature, a QR card in each aircraft at delivery, and the A
   the company controls.
 
 **Day 2 (Tue Oct 13): The BCT address.**
-- Confirm exactly where 305 SKY works at Boca Raton Airport and what the lease says.
-- If you share 3300 Airport Rd with Boca Aircraft Maintenance: use your own hangar/suite number
-  as it appears on the lease and your signage ("3300 Airport Rd, Hangar X"), make sure 305 SKY
-  signage is visible at your space, and use the same exact address on the website and everywhere
-  else. If Google asks for video verification, show your own sign, space and tools.
-- If 305 SKY doesn't actually have a staffed space at BCT, tell me before changing anything:
-  that profile is at risk and we should plan around it.
+- Make sure the BCT profile address reads **3300 Airport Rd, Ste 202, Boca Raton, FL 33431**.
+  "Ste 202" is what tells Google you're a different business from Boca Aircraft Maintenance
+  (Hangar 2) in the same building.
+- Put 305 SKY signage at Suite 202 (door or lobby directory). If Google asks for video
+  verification, film the sign, your suite and your tools.
+- Use "Ste 202" on the website and on every listing, exactly the same way.
 
 **Day 3 (Wed Oct 14): Name, address, phone (NAP).**
-- Decide the exact format for each location and use it everywhere, character for character:
-  - 305 SKY · 240 SW 34th St, Fort Lauderdale, FL 33315 · [FLL phone]
-  - 305 SKY · [BCT address with hangar no.] · [BCT phone]
-  - 305 SKY · [VRB address] · [VRB phone]
-- Ideally each location has its own local phone number (954 / 561 / 772) that forwards to the
-  shop. Keep 305-326-3498 as the AOG hotline on the website.
+Use these exactly, character for character, everywhere:
+- 305 SKY · 240 SW 34th St, Fort Lauderdale, FL 33315 · (305) 326-3498
+- 305 SKY · 3300 Airport Rd, Ste 202, Boca Raton, FL 33431 · (305) 326-3498
+- 305 SKY · 2655 Airport N Dr, Vero Beach, FL 32960 · (305) 326-3498
+
+One number for all three is allowed. Later (around Day 60), consider a forwarding local number
+per location (954 / 561 / 772) as each profile's primary phone, with (305) 326-3498 as the
+additional phone. Local numbers help a little with relevance and let you see which profile
+drives calls. Not urgent.
+
+**No Part 145 yet.** Until the certificate is issued, nothing (profile, website, listings) says
+"Part 145", "repair station" or "certified repair station". When it's issued, tell me and we'll
+add it everywhere. It's a strong selling point and the announcement is a good press story.
 
 **Day 4 (Thu Oct 15): Categories.**
 - Primary category on all three: **Aircraft maintenance company** (or the closest one Google offers).
@@ -293,11 +299,12 @@ Whichever location is lagging gets the focus for the last 30 days.
 - GBP Performance numbers: calls, website clicks, directions, top search terms
 - Any profile warnings, suspensions or edits Google made on its own
 
-## Facts to confirm before publishing
+## Facts (confirmed Oct 10, 2026)
 
-- Exact BCT address and hangar number (and whether it's shared with Boca Aircraft Maintenance)
-- Exact VRB address
-- Local phone number for each location
-- Certifications to mention (FAA Part 145 certificate number and status, aircraft types on the
-  operations specs, any OEM authorizations)
-- Whether the AOG line is truly answered 24/7
+- BCT: 3300 Airport Rd, Ste 202, Boca Raton, FL 33431
+- VRB: 2655 Airport N Dr, Vero Beach, FL 32960
+- One phone for all three, answered 24/7: (305) 326-3498
+- Part 145: application in progress, not yet issued
+
+Ready-to-paste copy for the profiles, the website pages and the schema code is in
+[`content/`](content/README.md).

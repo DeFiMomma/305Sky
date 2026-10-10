@@ -81,15 +81,20 @@ Learjet maintenance, King Air inspection, Gulfstream/Falcon/Global Express maint
 OPF (organic until a staffed location exists): aircraft maintenance / inspection / management
 Opa-locka, Miami-Opa Locka Executive Airport.
 
-## Business facts (confirm with the user before publishing anything)
+## Business facts (confirmed by the user, Oct 10 2026)
 
-- Name: 305 SKY (legal: 305 SKY LLC). Main line / AOG: 305-326-3498. Site: 305sky.com.
+- Name: 305 SKY (legal: 305 SKY LLC). One phone for all locations, answered 24/7 for AOG:
+  (305) 326-3498. Site: 305sky.com. Family-owned.
 - FLL: 240 SW 34th St, Fort Lauderdale, FL 33315.
-- BCT: Boca Raton Airport; website shows 3300 Airport Rd (same street address as Boca Aircraft
-  Maintenance; see the shared-address rule).
-- VRB: hangar at Vero Beach Regional Airport (address to confirm).
+- BCT: 3300 Airport Rd, Ste 202, Boca Raton, FL 33431 (same building as Boca Aircraft
+  Maintenance, which is Hangar 2; always include "Ste 202").
+- VRB: 2655 Airport N Dr, Vero Beach, FL 32960.
+- **No Part 145 certificate yet (application in progress).** Never write "Part 145", "repair
+  station", "certified repair station" or OEM-authorized in any copy until the user confirms the
+  certificate is issued. Then update every page, profile and listing.
 - Services: maintenance and inspections, avionics, interiors, paint, aircraft management,
   pre-purchase inspections, logbook digitization, 24/7 mobile AOG van.
+- Ready-to-use copy lives in `docs/seo/content/`.
 - Competitors: FLL – SEAL Aviation (fuel leak, NDT, structural; 4090 SW 30th Ave). BCT – Boca
   Aircraft Maintenance (3300 Airport Rd, Hangar 2; also OPF and Sarasota), Reliable Jet
   Maintenance (3900 Airport Rd, Hangar 1; also OPF). VRB – Vero Beach Aircraft Maintenance.
