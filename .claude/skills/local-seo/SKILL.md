@@ -94,7 +94,13 @@ Opa-locka, Miami-Opa Locka Executive Airport.
   certificate is issued. Then update every page, profile and listing.
 - Services: maintenance and inspections, avionics, interiors, paint, aircraft management,
   pre-purchase inspections, logbook digitization, 24/7 mobile AOG van.
-- Ready-to-use copy lives in `docs/seo/content/`.
+- The website also lists **FXE** (Fort Lauderdale Executive): 1905 NW 51st Street, Hangar 43A,
+  Fort Lauderdale. No Google profile yet; ask whether it is staffed before creating one.
+- Website: hand-coded PHP on Apache (not a builder). Brand: black #0a0a0a, gold #D0B870
+  (deep #8A6C38, highlight #F0E0A8), Montserrat headings, Inter body, gold logo.
+- Ready-to-use copy lives in `docs/seo/content/`. Latest site check:
+  `docs/seo/site-audit-2026-10-10.md` (false Part 145 claim in one blog post, car-related posts,
+  automatic posting of 2–3 AI-written posts a day).
 - Competitors: FLL – SEAL Aviation (fuel leak, NDT, structural; 4090 SW 30th Ave). BCT – Boca
   Aircraft Maintenance (3300 Airport Rd, Hangar 2; also OPF and Sarasota), Reliable Jet
   Maintenance (3900 Airport Rd, Hangar 1; also OPF). VRB – Vero Beach Aircraft Maintenance.
