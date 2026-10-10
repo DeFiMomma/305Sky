@@ -1,12 +1,13 @@
-# 305 SKY location pages: developer handoff
+# 305 SKY website pages: developer handoff
 
-Three standalone, SEO-ready location pages in the 305 SKY style (black, champagne gold,
+A new homepage and three standalone, SEO-ready location pages in the 305 SKY style (black, champagne gold,
 Cormorant Garamond headings, Jost body text). Neither page needs a build step. Each one
 is a single HTML file with its CSS inline and a few lines of JavaScript for the header
 and scroll fades. The content stays visible if the JavaScript doesn't run.
 
 | File | Publish at | Target searches |
 |---|---|---|
+| `index.html` | `/` (replaces the current homepage) | 305 SKY brand, aircraft management & maintenance South Florida; links to every location page |
 | `aircraft-management-maintenance-fort-lauderdale.html` | `/aircraft-maintenance-management-fort-lauderdale-fl/` | aircraft maintenance / aircraft management Fort Lauderdale |
 | `mid-heavy-jet-maintenance-vero-beach.html` | `/mid-heavy-jet-maintenance-vero-beach-fl/` | mid / heavy jet maintenance Vero Beach, aircraft maintenance / management Vero Beach |
 | `aog-maintenance-aircraft-management-boca-raton.html` | `/aog-maintenance-aircraft-management-boca-raton-fl/` | AOG maintenance, aircraft management, pre-buy inspection, records review, Garmin avionics installation Boca Raton |
@@ -66,6 +67,16 @@ structured-data block at the top.
 | `{{OPENS_24H …}}` / `{{CLOSES_24H …}}` | `08:00` / `17:00` | Must match each Google Business Profile |
 | `{{HOURS_DISPLAY …}}` | `Mon–Fri 8:00 am – 5:00 pm · AOG by phone` | |
 | `{{GOOGLE_BUSINESS_PROFILE_URL}}`, `{{VRB_GOOGLE_BUSINESS_PROFILE_URL}}`, `{{BCT_GOOGLE_BUSINESS_PROFILE_URL}}`, `{{LINKEDIN_OR_INSTAGRAM_URL}}` | | Delete any line you don't have |
+
+**Homepage:** `index.html` replaces the current 305sky.com homepage. It describes 305 SKY as one
+organization (Organization + WebSite structured data) and links to each location page. The
+location pages point back to it with `parentOrganization`, so Google treats them as one
+brand with several locations. Replacing the homepage changes no URLs, but keep any existing
+pages it used to link to reachable from the main navigation. Extra placeholders:
+`{{LINKEDIN_URL}}`, `{{INSTAGRAM_URL}}`, `{{VRB_PHONE_DISPLAY}}`, `{{VRB_PHONE_E164}}`.
+
+**Map pack plan:** `LOCAL-SEO-90-DAY-PLAN.md` is the 90-day plan for Google Business
+Profiles, reviews, citations and links.
 
 **Content to confirm with 305 SKY before launch:**
 - **FLL:** the fleet list comes from job history. The management services, owner

@@ -5,22 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Primary SEO -->
-<title>Aircraft Management &amp; Maintenance Fort Lauderdale FL | 305 SKY</title>
-<meta name="description" content="Private aircraft management and in-house jet maintenance at Fort Lauderdale-Hollywood International (FLL). Inspections, AOG support, owner-first service.">
-<link rel="canonical" href="https://{{DOMAIN}}/aircraft-maintenance-management-fort-lauderdale-fl/">
+<title>305 SKY | Aircraft Management &amp; Maintenance in South Florida</title>
+<meta name="description" content="Private aircraft management, jet maintenance, AOG support, pre-buy inspections and Garmin avionics from 305 SKY at FLL, FXE, Boca Raton and Vero Beach.">
+<link rel="canonical" href="https://{{DOMAIN}}/">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="geo.region" content="US-FL">
-<meta name="geo.placename" content="Fort Lauderdale">
 <meta name="theme-color" content="#0a0a0a">
 
 <!-- Social sharing -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="305 SKY">
-<meta property="og:title" content="Aircraft Management &amp; Maintenance in Fort Lauderdale, FL | 305 SKY">
-<meta property="og:description" content="Private aircraft management and in-house maintenance at Fort Lauderdale-Hollywood International (FLL).">
-<meta property="og:url" content="https://{{DOMAIN}}/aircraft-maintenance-management-fort-lauderdale-fl/">
-<meta property="og:image" content="https://{{DOMAIN}}/images/hero.jpg">
+<meta property="og:title" content="305 SKY | Aircraft Management &amp; Maintenance in South Florida">
+<meta property="og:description" content="Private aircraft management and maintenance from four Florida locations: FLL, FXE, Boca Raton and Vero Beach.">
+<meta property="og:url" content="https://{{DOMAIN}}/">
+<meta property="og:image" content="https://{{DOMAIN}}/images/vrb-hangar.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="305sky-logo.png">
@@ -29,124 +27,93 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 
 <!--
-  Structured data. Keep the name, address and phone here IDENTICAL to your
-  Google Business Profile and every directory listing. Every FAQ answer below
-  must match the visible FAQ text on the page.
+  Structured data for the brand. The homepage describes 305 SKY as one organization
+  and points to each location page, where the full LocalBusiness details live.
+  Keep names, addresses and phones identical to each Google Business Profile.
+  Every FAQ answer below must match the visible FAQ text on the page.
 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["LocalBusiness", "ProfessionalService"],
-      "@id": "https://{{DOMAIN}}/aircraft-maintenance-management-fort-lauderdale-fl/#location",
+      "@type": "Organization",
+      "@id": "https://{{DOMAIN}}/#organization",
       "name": "305 SKY",
       "legalName": "305 SKY LLC",
-      "parentOrganization": { "@id": "https://{{DOMAIN}}/#organization" },
-      "foundingDate": "2019",
-      "description": "Private aircraft management and in-house business jet and turboprop maintenance at Fort Lauderdale-Hollywood International Airport (FLL).",
       "url": "https://{{DOMAIN}}/",
       "logo": "https://{{DOMAIN}}/305sky-logo.png",
-      "image": "https://{{DOMAIN}}/images/hero.jpg",
-      "telephone": "{{PHONE_E164}}",
+      "image": "https://{{DOMAIN}}/images/vrb-hangar.jpg",
+      "foundingDate": "2019",
+      "description": "Private aircraft management and maintenance company with locations at Fort Lauderdale-Hollywood International (FLL), Fort Lauderdale Executive (FXE), Boca Raton (BCT) and Vero Beach (VRB), Florida.",
       "email": "{{EMAIL}}",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "240 SW 34th St",
-        "addressLocality": "Fort Lauderdale",
-        "addressRegion": "FL",
-        "postalCode": "33315",
-        "addressCountry": "US"
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "{{OPENS_24H e.g. 08:00}}",
-          "closes": "{{CLOSES_24H e.g. 17:00}}"
-        }
-      ],
-      "areaServed": [
-        { "@type": "City", "name": "Fort Lauderdale, FL" },
-        { "@type": "City", "name": "Hollywood, FL" },
-        { "@type": "City", "name": "Pompano Beach, FL" },
-        { "@type": "City", "name": "Boca Raton, FL" },
-        { "@type": "City", "name": "Miami, FL" },
-        { "@type": "City", "name": "West Palm Beach, FL" },
-        { "@type": "AdministrativeArea", "name": "Broward County, FL" }
-      ],
+      "telephone": "{{PHONE_E164}}",
+      "areaServed": { "@type": "State", "name": "Florida" },
       "knowsAbout": [
         "Aircraft management",
         "Aircraft maintenance",
-        "Private jet management",
-        "Business jet inspections",
+        "Business jet maintenance",
+        "Mid-size and heavy jet maintenance",
         "AOG support",
-        "Pre-purchase inspections",
-        "Bombardier Challenger 604",
-        "Bombardier Global Express",
-        "Beechcraft King Air B300",
-        "Mitsubishi MU-2"
+        "Pre-buy inspections",
+        "Aircraft records review",
+        "Garmin avionics installation"
       ],
       "sameAs": [
-        "{{GOOGLE_BUSINESS_PROFILE_URL}}",
-        "{{LINKEDIN_OR_INSTAGRAM_URL}}"
+        "{{LINKEDIN_URL}}",
+        "{{INSTAGRAM_URL}}"
       ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Aircraft services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@id": "https://{{DOMAIN}}/aircraft-maintenance-management-fort-lauderdale-fl/#management" } },
-          { "@type": "Offer", "itemOffered": { "@id": "https://{{DOMAIN}}/aircraft-maintenance-management-fort-lauderdale-fl/#maintenance" } }
-        ]
-      }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://{{DOMAIN}}/aircraft-maintenance-management-fort-lauderdale-fl/#management",
-      "name": "Aircraft Management in Fort Lauderdale, FL",
-      "serviceType": "Aircraft management",
-      "description": "Flight crew coordination, flight scheduling and logistics, maintenance planning and oversight, insurance and warranty support, owner reporting and budgeting, and fuel, parking and hangar coordination for private aircraft owners.",
-      "provider": { "@id": "https://{{DOMAIN}}/aircraft-maintenance-management-fort-lauderdale-fl/#location" },
-      "areaServed": { "@type": "AdministrativeArea", "name": "South Florida" }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://{{DOMAIN}}/aircraft-maintenance-management-fort-lauderdale-fl/#maintenance",
-      "name": "Aircraft Maintenance in Fort Lauderdale, FL",
-      "serviceType": "Aircraft maintenance",
-      "description": "Scheduled inspections and preventive maintenance, unscheduled repairs and troubleshooting, AOG support, pre-purchase inspections and records review, avionics and aircraft systems, and cabin interiors for business jets and turboprops.",
-      "provider": { "@id": "https://{{DOMAIN}}/aircraft-maintenance-management-fort-lauderdale-fl/#location" },
-      "areaServed": { "@type": "AdministrativeArea", "name": "South Florida" }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://{{DOMAIN}}/" },
-        { "@type": "ListItem", "position": 2, "name": "Aircraft Management & Maintenance in Fort Lauderdale, FL", "item": "https://{{DOMAIN}}/aircraft-maintenance-management-fort-lauderdale-fl/" }
+      "department": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://{{DOMAIN}}/aircraft-maintenance-management-fort-lauderdale-fl/#location",
+          "name": "305 SKY",
+          "url": "https://{{DOMAIN}}/aircraft-maintenance-management-fort-lauderdale-fl/",
+          "telephone": "{{PHONE_E164}}",
+          "address": { "@type": "PostalAddress", "streetAddress": "240 SW 34th St", "addressLocality": "Fort Lauderdale", "addressRegion": "FL", "postalCode": "33315", "addressCountry": "US" }
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://{{DOMAIN}}/aog-maintenance-aircraft-management-boca-raton-fl/#location",
+          "name": "305 SKY",
+          "url": "https://{{DOMAIN}}/aog-maintenance-aircraft-management-boca-raton-fl/",
+          "telephone": "{{BCT_PHONE_E164}}",
+          "address": { "@type": "PostalAddress", "streetAddress": "3300 Airport Rd, Ste 202", "addressLocality": "Boca Raton", "addressRegion": "FL", "postalCode": "33431", "addressCountry": "US" }
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://{{DOMAIN}}/mid-heavy-jet-maintenance-vero-beach-fl/#location",
+          "name": "305 SKY",
+          "url": "https://{{DOMAIN}}/mid-heavy-jet-maintenance-vero-beach-fl/",
+          "telephone": "{{VRB_PHONE_E164}}",
+          "address": { "@type": "PostalAddress", "streetAddress": "{{VRB_STREET_ADDRESS}}", "addressLocality": "Vero Beach", "addressRegion": "FL", "postalCode": "{{VRB_ZIP}}", "addressCountry": "US" }
+        }
       ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://{{DOMAIN}}/#website",
+      "name": "305 SKY",
+      "url": "https://{{DOMAIN}}/",
+      "publisher": { "@id": "https://{{DOMAIN}}/#organization" }
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Where is 305 SKY located?",
-          "acceptedAnswer": { "@type": "Answer", "text": "305 SKY is at 240 SW 34th St, Fort Lauderdale, FL 33315, at Fort Lauderdale-Hollywood International Airport (FLL). We also have locations at Fort Lauderdale Executive (FXE), Boca Raton (BCT) and Vero Beach (VRB), and serve aircraft owners and operators throughout South Florida." }
+          "name": "What does 305 SKY do?",
+          "acceptedAnswer": { "@type": "Answer", "text": "305 SKY provides private aircraft management and maintenance for business jets and turboprops, including scheduled inspections, unscheduled repairs, AOG support, pre-buy inspections, records review and Garmin avionics installations." }
         },
         {
           "@type": "Question",
-          "name": "What does aircraft management with 305 SKY include?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Flight crew coordination, flight scheduling and logistics, maintenance planning and oversight, insurance and warranty support, owner reporting and budgeting, and fuel, parking and hangar coordination, all handled by one team with one point of contact." }
+          "name": "Where are 305 SKY's locations?",
+          "acceptedAnswer": { "@type": "Answer", "text": "305 SKY has four Florida locations: Fort Lauderdale-Hollywood International (FLL), Fort Lauderdale Executive (FXE), Boca Raton (BCT) and Vero Beach (VRB)." }
         },
         {
           "@type": "Question",
-          "name": "Do managed aircraft receive preferred maintenance pricing?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Aircraft managed by 305 SKY receive preferred pricing on maintenance performed by our Fort Lauderdale team, along with fuel discounts through participating providers, preferred parking where available, and access to our South Florida hangar network, subject to availability." }
-        },
-        {
-          "@type": "Question",
-          "name": "What aircraft do you maintain?",
-          "acceptedAnswer": { "@type": "Answer", "text": "We maintain business jets and turboprops, including the Bombardier Challenger 604, Bombardier Global Express (BD-700), Beechcraft King Air B300 and Mitsubishi MU-2. Contact us about other types." }
+          "name": "Can you maintain large-cabin jets like the Gulfstream G450 or Global Express?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our 12,000+ square foot Vero Beach hangar takes mid-size and heavy business jets, including the Dassault Falcon 900, Gulfstream G450 and Bombardier Global Express." }
         },
         {
           "@type": "Question",
@@ -155,8 +122,8 @@
         },
         {
           "@type": "Question",
-          "name": "How is inspection work priced?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Scheduled inspections are quoted at a flat rate based on the manufacturer's inspection program. Anything found during the inspection is quoted separately and only worked after you approve it." }
+          "name": "What does aircraft management include?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Flight crew coordination, flight scheduling and logistics, maintenance planning and oversight, insurance and warranty support, owner reporting and budgeting, and fuel, parking and hangar coordination, with one point of contact for your aircraft." }
         },
         {
           "@type": "Question",
@@ -406,28 +373,35 @@
     .hero .ctas .btn, .band .ctas .btn { width: 100%; justify-content: center; }
     header.site .btn::after { display: none; }
   }
+  /* Location page components */
+  .capacity { display: grid; grid-template-columns: 1fr 1.1fr; gap: 90px; align-items: center; }
+  @media (max-width: 920px) { .capacity { grid-template-columns: 1fr; gap: 56px; } }
+  .stat { border: 1px solid var(--hair); padding: 56px 48px; position: relative; background: linear-gradient(160deg, rgba(201,164,92,.08), transparent 60%); }
+  .stat::before, .stat::after { content: ""; position: absolute; width: 22px; height: 22px; border: 1px solid var(--gold); }
+  .stat::before { top: -1px; left: -1px; border-right: 0; border-bottom: 0; }
+  .stat::after { bottom: -1px; right: -1px; border-left: 0; border-top: 0; }
+  .stat .big { display: block; font: 300 clamp(4.2rem, 9vw, 7rem)/.9 var(--serif); letter-spacing: -.02em; }
+  .stat .unit { display: block; margin: 14px 0 34px; font-size: .72rem; letter-spacing: .32em; text-transform: uppercase; color: var(--gold); }
+  .stat ul { list-style: none; margin: 0; padding: 0; }
+  .stat li { display: flex; gap: 14px; align-items: center; padding: 15px 0; border-top: 1px solid var(--hair); color: var(--ivory); font-size: .95rem; }
+  .stat li::before { content: ""; width: 7px; height: 7px; transform: rotate(45deg); border: 1px solid var(--gold); flex: none; }
+  @media (max-width: 560px) { .stat { padding: 40px 26px; } }
 
+  .jets { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--hair); border: 1px solid var(--hair); margin-top: 64px; }
+  .jets article { background: var(--panel); padding: 40px 30px 44px; }
+  .jets small { display: block; font-size: .64rem; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+  .jets h3 { font-size: 1.75rem; margin-bottom: 14px; }
+  .jets p { color: var(--muted); font-size: .9rem; margin: 0; }
+  @media (max-width: 960px) { .jets { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .jets { grid-template-columns: 1fr; } }
 
-  /* FLL hero: headline left, the full ramp photo right (bleeds to the screen edge), whole jet visible on load */
-  .hero.fll { display: block; min-height: 0; padding: 132px 0 0; background: radial-gradient(900px 520px at 20% 0%, rgba(201,164,92,.14), transparent 62%), var(--black); }
-  .hero.fll::before { display: none; }
-  .hero.fll .hero-split { display: grid; grid-template-columns: minmax(0, 500px) minmax(0, 1fr); gap: 56px; align-items: center; padding-left: max(28px, calc((100vw - var(--max)) / 2 + 28px)); }
-  .hero.fll h1 { font-size: clamp(2.6rem, 4.6vw, 4.3rem); margin-bottom: 24px; }
-  .hero.fll .lead { max-width: 44ch; }
-  .hero.fll .ctas { margin: 30px 0 0; }
-  .hero.fll .hero-media { position: relative; inset: auto; margin: 0; aspect-ratio: 2 / 1; overflow: hidden; }
-  .hero.fll .hero-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
-  .hero.fll .hero-media::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 14%; z-index: 1; background: linear-gradient(90deg, var(--black), transparent); }
-  .hero.fll .hero-media::after { content: ""; position: absolute; inset: auto 0 0; height: 18%; z-index: 1; background: linear-gradient(0deg, var(--black), transparent); }
-  .hero.fll .pillars { margin-top: 56px; }
-  @media (max-width: 900px) {
-    .hero.fll { padding-top: 84px; }
-    .hero.fll .hero-split { grid-template-columns: 1fr; gap: 28px; padding-left: 0; }
-    .hero.fll .hero-media { order: -1; aspect-ratio: 16 / 10; }
-    .hero.fll .hero-media::before { display: none; }
-    .hero.fll .hero-text { padding: 0 20px; }
-    .hero.fll .pillars { margin-top: 40px; }
-  }
+  .locations { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--hair); border: 1px solid var(--hair); margin-top: 56px; }
+  .locations article { background: var(--black); padding: 48px 44px; }
+  .locations .code { font: 300 3.4rem/1 var(--serif); display: block; margin-bottom: 18px; }
+  .locations h3 { margin-bottom: 12px; }
+  .locations p { color: var(--muted); font-size: .95rem; }
+  .locations .here { font-size: .64rem; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); }
+  @media (max-width: 760px) { .locations { grid-template-columns: 1fr; } .locations article { padding: 40px 26px; } }
 
   /* Heritage */
   .heritage { display: grid; grid-template-columns: 1fr 1.15fr; gap: 90px; align-items: center; }
@@ -437,6 +411,52 @@
   .figures b { display: block; font: 300 clamp(2.8rem, 5vw, 3.8rem)/1 var(--serif); letter-spacing: -.01em; margin-bottom: 14px; }
   .figures span { display: block; font-size: .66rem; letter-spacing: .28em; text-transform: uppercase; color: var(--muted); line-height: 1.6; }
   @media (max-width: 420px) { .figures li { padding: 30px 20px 28px; } }
+  /* Homepage hero: headline left, the hangar photo right (bleeds to the screen edge) */
+  .hero.home { display: block; min-height: 0; padding: 132px 0 0; background: radial-gradient(900px 520px at 20% 0%, rgba(201,164,92,.14), transparent 62%), var(--black); }
+  .hero.home::before { display: none; }
+  .hero.home .hero-split { display: grid; grid-template-columns: minmax(0, 500px) minmax(0, 1fr); gap: 56px; align-items: center; padding-left: max(28px, calc((100vw - var(--max)) / 2 + 28px)); }
+  .hero.home h1 { font-size: clamp(2.6rem, 4.6vw, 4.3rem); margin-bottom: 24px; }
+  .hero.home .lead { max-width: 44ch; }
+  .hero.home .ctas { margin: 30px 0 0; }
+  .hero.home .hero-media { position: relative; inset: auto; margin: 0; aspect-ratio: 16 / 10; overflow: hidden; }
+  .hero.home .hero-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; }
+  .hero.home .hero-media::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 14%; z-index: 1; background: linear-gradient(90deg, var(--black), transparent); }
+  .hero.home .hero-media::after { content: ""; position: absolute; inset: auto 0 0; height: 18%; z-index: 1; background: linear-gradient(0deg, var(--black), transparent); }
+  .hero.home .pillars { margin-top: 56px; }
+  @media (max-width: 900px) {
+    .hero.home { padding-top: 84px; }
+    .hero.home .hero-split { grid-template-columns: 1fr; gap: 28px; padding-left: 0; }
+    .hero.home .hero-media { order: -1; aspect-ratio: 16 / 10; }
+    .hero.home .hero-media::before { display: none; }
+    .hero.home .hero-text { padding: 0 20px; }
+    .hero.home .pillars { margin-top: 40px; }
+  }
+
+  /* Boca Raton additions */
+  .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--hair); border: 1px solid var(--hair); margin-top: 64px; }
+  .services article { background: var(--panel); padding: 40px 32px 44px; }
+  .services .num { display: block; font: 300 2.2rem/1 var(--serif); margin-bottom: 26px; }
+  .services h3 { margin-bottom: 12px; }
+  .services p { color: var(--muted); font-size: .92rem; margin: 0; }
+  @media (max-width: 960px) { .services { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .services { grid-template-columns: 1fr; } }
+  .aog-call { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--hair); }
+  .aog-call small { display: block; font-size: .64rem; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .aog-call a.phone { font: 300 2.2rem/1.1 var(--serif); color: var(--ivory); }
+  .aog-call a.phone:hover { color: var(--gold-soft); }
+  /* Homepage additions */
+  .services a.more { display: inline-block; margin-top: 18px; font-size: .66rem; letter-spacing: .28em; text-transform: uppercase; color: var(--gold); }
+  .services a.more:hover { color: var(--gold-soft); }
+  .locations .addr-line { font-size: .85rem; color: var(--ivory); margin: -4px 0 18px; }
+  .jets.six { grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 960px) { .jets.six { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .jets.six { grid-template-columns: 1fr; } }
+  .nap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--hair); border: 1px solid var(--hair); margin-top: 56px; }
+  .nap article { background: var(--black); padding: 40px 34px; }
+  .nap .code { display: block; font: 300 2.6rem/1 var(--serif); margin-bottom: 16px; }
+  .nap address { font-style: normal; color: var(--ivory); line-height: 1.8; font-size: .95rem; }
+  .nap a { color: var(--gold-soft); }
+  @media (max-width: 860px) { .nap { grid-template-columns: 1fr; } }
 </style>
 <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -446,9 +466,9 @@
   <div class="wrap">
     <a class="logo" href="/" aria-label="305 SKY home"><img src="305sky-logo-light.png" alt="305 SKY" width="81" height="46"></a>
     <nav aria-label="Main">
-      <a href="#management">Aircraft Management</a>
-      <a href="#maintenance">Maintenance</a>
-      <a href="#location">Our FLL Location</a>
+      <a href="#locations">Locations</a>
+      <a href="#services">Services</a>
+      <a href="#management">Management</a>
       <a href="#faq">FAQ</a>
       <a class="btn btn-gold" href="#contact">Request a Quote</a>
     </nav>
@@ -456,35 +476,34 @@
 </header>
 
 <main>
-  <section class="hero fll" aria-labelledby="page-title">
+  <section class="hero home" aria-labelledby="page-title">
     <div class="hero-split">
       <div class="hero-text">
-        <p class="eyebrow">Fort Lauderdale &middot; FLL</p>
+        <p class="eyebrow">FLL &middot; FXE &middot; BCT &middot; VRB</p>
         <h1 id="page-title">
           <span class="gold-text">Aircraft Management</span> <em>&amp;</em> Maintenance
-          <small>in Fort Lauderdale, Florida</small>
+          <small>across South Florida</small>
         </h1>
-        <p class="lead">Personalized, end-to-end management for private aircraft, backed by an in-house maintenance team at FLL. One standard of care, from the flight deck to the hangar floor.</p>
+        <p class="lead">305 SKY manages and maintains private aircraft from four Florida locations, with one team and one standard of care from the flight deck to the hangar floor.</p>
         <div class="ctas">
-          <a class="btn btn-gold" href="#contact">Schedule a Consultation</a>
-          <a class="btn btn-line" href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a>
+          <a class="btn btn-gold" href="#contact">Request a Quote</a>
+          <a class="btn btn-line" href="#locations">Find a Location</a>
         </div>
       </div>
       <figure class="hero-media">
-        <img class="slot" src="images/hero.jpg" width="1774" height="887" alt="Bombardier Challenger business jet on the ramp in front of the 305 SKY maintenance hangar in Fort Lauderdale at sunset" fetchpriority="high" onload="this.classList.add('loaded')" onerror="this.remove()">
+        <img class="slot" src="images/vrb-hangar.jpg" width="1448" height="1086" alt="305 SKY hangar with the gold 305 SKY sign and business aircraft inside" fetchpriority="high" onload="this.classList.add('loaded')" onerror="this.remove()">
       </figure>
     </div>
     <div class="wrap">
       <ul class="pillars">
-        <li><b>01</b>Private aircraft management</li>
-        <li><b>02</b>Preferred maintenance rates</li>
-        <li><b>03</b>Fuel &amp; parking discounts</li>
-        <li><b>04</b>South Florida hangar network</li>
+        <li><b>01</b>Aircraft management</li>
+        <li><b>02</b>In-house maintenance</li>
+        <li><b>03</b>AOG support</li>
+        <li><b>04</b>Pre-buy &amp; Garmin avionics</li>
       </ul>
     </div>
   </section>
 
-  <div class="wrap crumbs"><a href="/">Home</a><span>/</span>Aircraft Management &amp; Maintenance, Fort Lauderdale</div>
   <hr class="rule">
 
   <section class="panel" aria-labelledby="heritage-title">
@@ -502,13 +521,69 @@
       </ul>
     </div>
   </section>
+  <section id="locations" aria-labelledby="loc-title">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">Our Locations</p>
+        <h2 id="loc-title">Four Florida locations. <em class="gold-text">One standard.</em></h2>
+        <p class="lead">From Vero Beach to Fort Lauderdale, 305 SKY is at four airports along Florida's east coast, with the same standards, the same team and one set of records wherever your aircraft lands.</p>
+      </div>
+      <div class="locations reveal">
+        <article>
+          <span class="code gold-text">FLL</span>
+          <h3>Fort Lauderdale-Hollywood International</h3>
+          <p class="addr-line">240 SW 34th St, Fort Lauderdale, FL 33315</p>
+          <p>Aircraft management and in-house maintenance, with our owner lounge.</p>
+          <a class="btn btn-line" href="/aircraft-maintenance-management-fort-lauderdale-fl/">Aircraft Maintenance in Fort Lauderdale</a>
+        </article>
+        <article>
+          <span class="code gold-text">BCT</span>
+          <h3>Boca Raton</h3>
+          <p class="addr-line">3300 Airport Rd, Ste 202, Boca Raton, FL 33431</p>
+          <p>AOG maintenance, aircraft management, pre-buy inspections, records review and Garmin avionics installations.</p>
+          <a class="btn btn-line" href="/aog-maintenance-aircraft-management-boca-raton-fl/">AOG &amp; Avionics in Boca Raton</a>
+        </article>
+        <article>
+          <span class="code gold-text">VRB</span>
+          <h3>Vero Beach</h3>
+          <p class="addr-line">{{VRB_STREET_ADDRESS}}, Vero Beach, FL {{VRB_ZIP}}</p>
+          <p>A 12,000+ sq ft hangar for mid-size and heavy jets, with maintenance and full-service management.</p>
+          <a class="btn btn-line" href="/mid-heavy-jet-maintenance-vero-beach-fl/">Jet Maintenance in Vero Beach</a>
+        </article>
+        <article>
+          <span class="code gold-text">FXE</span>
+          <h3>Fort Lauderdale Executive</h3>
+          <p class="addr-line">Fort Lauderdale, FL</p>
+          <p>305 SKY location at Fort Lauderdale Executive Airport.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="panel" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">Services</p>
+        <h2 id="services-title">Everything your aircraft needs, <em class="gold-text">under one name.</em></h2>
+        <p class="lead">From routine inspections to a grounded jet at midnight, 305 SKY covers the full life of private aircraft ownership.</p>
+      </div>
+      <div class="services reveal">
+        <article><span class="num gold-text">01</span><h3>Aircraft Management</h3><p>Crew, scheduling, maintenance oversight, insurance, budgeting and hangar coordination, with one point of contact.</p><a class="more" href="#management">Explore management &rarr;</a></article>
+        <article><span class="num gold-text">02</span><h3>Aircraft Maintenance</h3><p>Scheduled inspections, preventive maintenance, unscheduled repairs and squawks for business jets and turboprops.</p><a class="more" href="/aircraft-maintenance-management-fort-lauderdale-fl/">Fort Lauderdale &rarr;</a></article>
+        <article><span class="num gold-text">03</span><h3>Mid &amp; Heavy Jet Maintenance</h3><p>Falcon 900, Gulfstream G450 and Global Express worked on inside our 12,000+ sq ft Vero Beach hangar.</p><a class="more" href="/mid-heavy-jet-maintenance-vero-beach-fl/">Vero Beach &rarr;</a></article>
+        <article><span class="num gold-text">04</span><h3>AOG Support</h3><p>Rapid troubleshooting, parts sourcing and return to service when your aircraft is on the ground.</p><a class="more" href="/aog-maintenance-aircraft-management-boca-raton-fl/#aog">AOG support &rarr;</a></article>
+        <article><span class="num gold-text">05</span><h3>Pre-Buy &amp; Records Review</h3><p>Records research and a physical inspection, with a clear written report before you close.</p><a class="more" href="/aog-maintenance-aircraft-management-boca-raton-fl/#prebuy">Pre-buy inspections &rarr;</a></article>
+        <article><span class="num gold-text">06</span><h3>Garmin Avionics</h3><p>Garmin displays, navigators, autopilots and ADS-B upgrades, with complete installation paperwork.</p><a class="more" href="/aog-maintenance-aircraft-management-boca-raton-fl/#avionics">Garmin avionics &rarr;</a></article>
+      </div>
+    </div>
+  </section>
 
   <section id="management" aria-labelledby="mgmt-title">
     <div class="wrap split">
       <div class="reveal">
         <p class="eyebrow">Aircraft Management</p>
-        <h2 id="mgmt-title">Aircraft Management in Fort Lauderdale, <em class="gold-text">nose to tail.</em></h2>
-        <p class="lead">Your aircraft should be an asset you enjoy, never another obligation. Our Fort Lauderdale aircraft management service handles every detail with personal oversight and meticulous care, so you simply fly.</p>
+        <h2 id="mgmt-title">Private aircraft management, <em class="gold-text">handled personally.</em></h2>
+        <p class="lead">Your aircraft should be an asset you enjoy, never another obligation. We take care of the details of ownership with personal oversight and meticulous care, so you simply fly.</p>
         <ul class="ticks">
           <li>Flight crew coordination</li>
           <li>Flight scheduling &amp; logistics</li>
@@ -521,149 +596,78 @@
       <aside class="approach reveal" aria-label="The 305 SKY approach">
         <p class="eyebrow">The 305 SKY Approach</p>
         <h3>More than management.<br><em class="gold-text">A higher standard.</em></h3>
-        <p>One trusted team. From flight readiness to long-term maintenance planning, we bring every aspect of private aircraft ownership together, with a single point of contact who knows your aircraft as well as you do.</p>
+        <p>Because management and maintenance live under one roof, our owners get more personal service and meaningful savings: preferred maintenance pricing, fuel discounts through participating providers, preferred parking where available and access to our South Florida hangar network.</p>
+        <p class="fine" style="margin-top:0">Specific savings and availability depend on aircraft, location and management agreement.</p>
         <a class="btn btn-gold" href="#contact">Discuss Aircraft Management</a>
       </aside>
     </div>
   </section>
 
-  <section class="panel" aria-labelledby="value-title">
-    <div class="wrap">
-      <div class="reveal">
-        <p class="eyebrow">The 305 SKY Advantage</p>
-        <h2 id="value-title">More personal service.<br><em class="gold-text">More value for owners.</em></h2>
-        <p class="lead">Because management and maintenance live under one roof, our owners get more thoughtful service and meaningful savings.</p>
-      </div>
-      <div class="benefits reveal">
-        <article><span class="num gold-text">01</span><h3>Maintenance</h3><p>Preferred pricing for eligible maintenance performed by the 305 SKY team.</p></article>
-        <article><span class="num gold-text">02</span><h3>Fuel</h3><p>Access to negotiated fuel discounts through participating providers.</p></article>
-        <article><span class="num gold-text">03</span><h3>Parking</h3><p>Preferred aircraft parking arrangements where available.</p></article>
-        <article><span class="num gold-text">04</span><h3>Hangar Access</h3><p>Additional hangar options through our South Florida network, subject to availability.</p></article>
-      </div>
-      <p class="fine">Specific savings, hangar availability and program terms depend on aircraft, location, service provider and management agreement.</p>
-    </div>
-  </section>
-
-  <section id="maintenance" class="media-split" aria-labelledby="maint-title" style="padding:0">
-    <figure class="media" style="margin:0">
-      <!-- Replace with your engine / hangar technician photo (approx. 1400×1800) -->
-      <img class="slot" src="images/engine.jpg" alt="305 SKY technician inspecting a business jet engine in the Fort Lauderdale hangar" loading="lazy" onload="this.classList.add('loaded')" onerror="this.remove()">
-      <figcaption>In-house &middot; Fort Lauderdale</figcaption>
-    </figure>
-    <div class="copy reveal">
-      <p class="eyebrow">Technical Expertise</p>
-      <h2 id="maint-title">Aircraft Maintenance in Fort Lauderdale, <em class="gold-text">handled in-house.</em></h2>
-      <p class="lead">Scheduled inspections, unscheduled repairs and responsive technical support for business jets and turboprops, delivered by our own Fort Lauderdale maintenance team.</p>
-      <ol class="numbered">
-        <li>Scheduled inspections &amp; preventive maintenance</li>
-        <li>Unscheduled repairs &amp; troubleshooting</li>
-        <li>Aircraft on Ground (AOG) support</li>
-        <li>Pre-purchase inspections &amp; records review</li>
-        <li>Avionics &amp; aircraft systems</li>
-        <li>Aircraft cabin interiors</li>
-      </ol>
-      <p class="fine">Exterior painting is coordinated with specialist partners and is not performed at our facility.</p>
-    </div>
-  </section>
-
-  <section class="panel" aria-labelledby="fleet-title" style="padding-top: 110px;">
+  <section class="panel" aria-labelledby="fleet-title">
     <div class="wrap">
       <div class="reveal">
         <p class="eyebrow">Experience</p>
         <h2 id="fleet-title">Business jets &amp; turboprops <em class="gold-text">we know well.</em></h2>
-        <p class="lead">Hands-on experience across the cabin-class fleet. Don't see your aircraft? Ask us. We work on many more types.</p>
+        <p class="lead">From turboprops to ultra-long-range jets, our technicians know these airframes and their maintenance programs. Don't see yours? Ask us.</p>
       </div>
-      <ul class="fleet fleet-wrap reveal">
-        <li><small>Bombardier</small><strong>Challenger 604</strong></li>
-        <li><small>Bombardier</small><strong>Global Express</strong></li>
-        <li><small>Beechcraft</small><strong>King Air B300</strong></li>
-        <li><small>Mitsubishi</small><strong>MU-2B</strong></li>
-      </ul>
-
-      <div class="reveal" style="margin-top: 120px;">
-        <p class="eyebrow">How We Work</p>
-        <h2>Clear quotes. <em class="gold-text">No surprises.</em></h2>
+      <div class="jets six reveal">
+        <article><small>Bombardier</small><h3>Global Express</h3><p>Ultra-long-range, maintained inside our Vero Beach hangar.</p></article>
+        <article><small>Gulfstream</small><h3>G450</h3><p>Heavy-jet comfort and range, with the hangar space to match.</p></article>
+        <article><small>Dassault</small><h3>Falcon 900</h3><p>Tri-jet, large-cabin performance and the inspection discipline it demands.</p></article>
+        <article><small>Bombardier</small><h3>Challenger 604</h3><p>The super-midsize workhorse our team knows inside and out.</p></article>
+        <article><small>Beechcraft</small><h3>King Air B300</h3><p>Turboprop inspections, squawks and upgrades.</p></article>
+        <article><small>Mitsubishi</small><h3>MU-2B</h3><p>Special inspections and the know-how this type requires.</p></article>
       </div>
-      <ol class="steps reveal">
-        <li><h3>Tell us what you need</h3><p>Share the tail number, location and the work or squawks you have in mind.</p></li>
-        <li><h3>Receive a written quote</h3><p>Inspections are quoted at a flat rate to the manufacturer's program.</p></li>
-        <li><h3>Approve any findings</h3><p>Anything new is priced and sent to you first. Nothing extra without your approval.</p></li>
-        <li><h3>Fly away, fully documented</h3><p>An itemized invoice and completed logbook entries, every time.</p></li>
-      </ol>
     </div>
   </section>
 
-  <section id="location" aria-labelledby="loc-title">
+  <section aria-labelledby="exp-title">
     <div class="wrap facility">
       <div class="reveal">
-        <p class="eyebrow">Our Fort Lauderdale Facility</p>
-        <h2 id="loc-title">Welcome to <em class="gold-text">Fort Lauderdale.</em></h2>
-        <p class="lead">Our FLL location pairs hands-on technical expertise with the attentive, personalized experience private aviation owners deserve, minutes from Las Olas, Port Everglades and the beaches.</p>
-        <div class="addr">
-          <small>305 SKY &middot; Fort Lauderdale-Hollywood International</small>
-          <address>240 SW 34th St<br>Fort Lauderdale, FL 33315</address>
-        </div>
-        <a class="btn btn-gold" href="https://www.google.com/maps/dir/?api=1&amp;destination=240+SW+34th+St,+Fort+Lauderdale,+FL+33315" target="_blank" rel="noopener">Get Directions</a>
+        <p class="eyebrow">The 305 SKY Experience</p>
+        <h2 id="exp-title">Private aviation, <em class="gold-text">personalized.</em></h2>
+        <p class="lead">Owners and crews are welcomed, not processed. Our Fort Lauderdale lobby reflects the way we work: calm, considered and attentive to every detail.</p>
+        <ol class="steps" style="grid-template-columns:1fr 1fr; gap:36px; margin-top:44px">
+          <li><h3>Written quotes</h3><p>Inspections are quoted at a flat rate to the manufacturer's program.</p></li>
+          <li><h3>Your approval first</h3><p>Anything new is priced and sent to you before work begins.</p></li>
+          <li><h3>One contact</h3><p>One person who knows your aircraft as well as you do.</p></li>
+          <li><h3>Full documentation</h3><p>Itemized invoices and completed logbook entries, every time.</p></li>
+        </ol>
       </div>
       <figure class="reveal">
-        <!-- Replace with your lobby / lounge photo (approx. 1400×1750) -->
-        <img class="slot" src="images/lounge.jpg" width="1086" height="1448" alt="305 SKY lobby in Fort Lauderdale with marble floors, leather seating and the illuminated 305 SKY sign" loading="lazy" onload="this.classList.add('loaded')" onerror="this.remove()">
-        <figcaption>305 SKY Lobby &middot; Fort Lauderdale &middot; FLL</figcaption>
+        <img class="slot" src="images/lounge.jpg" width="1086" height="1448" alt="305 SKY lobby with marble floors, leather seating and the illuminated 305 SKY sign" loading="lazy" onload="this.classList.add('loaded')" onerror="this.remove()">
+        <figcaption>305 SKY Lobby &middot; Fort Lauderdale</figcaption>
       </figure>
     </div>
   </section>
 
-  <section class="panel" aria-labelledby="area-title">
-    <div class="wrap">
-      <div class="reveal">
-        <p class="eyebrow">Service Area</p>
-        <h2 id="area-title">Based at FLL. <em class="gold-text">Serving South Florida.</em></h2>
-        <p class="lead">With 305 SKY locations at FLL, Fort Lauderdale Executive (FXE) and <a href="/aog-maintenance-aircraft-management-boca-raton-fl/">Boca Raton (BCT)</a>, we support owners and operators across Broward, Miami-Dade and Palm Beach counties, and travel to your aircraft when it can't come to us. Flying a larger jet? Our <a href="/mid-heavy-jet-maintenance-vero-beach-fl/">Vero Beach hangar</a> takes aircraft up to the Global Express inside.</p>
-      </div>
-      <ul class="airports reveal" aria-label="Airports served">
-        <li><b>FLL</b>Fort Lauderdale-Hollywood Intl &middot; 305 SKY location</li>
-        <li><b>FXE</b>Fort Lauderdale Executive &middot; 305 SKY location</li>
-        <li><b>PMP</b>Pompano Beach Airpark</li>
-        <li><b>BCT</b>Boca Raton &middot; 305 SKY location</li>
-        <li><b>OPF</b>Miami-Opa locka Executive</li>
-        <li><b>TMB</b>Miami Executive</li>
-        <li><b>HWO</b>North Perry, Hollywood</li>
-        <li><b>PBI</b>Palm Beach International</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="faq" class="faq" aria-labelledby="faq-title">
+  <section id="faq" class="faq panel" aria-labelledby="faq-title">
     <div class="wrap faq-grid">
       <div class="reveal">
         <p class="eyebrow">Questions</p>
         <h2 id="faq-title">Owner <em class="gold-text">FAQ.</em></h2>
-        <p class="lead">Aircraft management and maintenance in Fort Lauderdale, answered.</p>
+        <p class="lead">Aircraft management and maintenance with 305 SKY, answered.</p>
       </div>
       <div class="reveal">
         <details open>
-          <summary>Where is 305 SKY located?</summary>
-          <p>305 SKY is at 240 SW 34th St, Fort Lauderdale, FL 33315, at Fort Lauderdale-Hollywood International Airport (FLL). We also have locations at Fort Lauderdale Executive (FXE), Boca Raton (BCT) and Vero Beach (VRB), and serve aircraft owners and operators throughout South Florida.</p>
+          <summary>What does 305 SKY do?</summary>
+          <p>305 SKY provides private aircraft management and maintenance for business jets and turboprops, including scheduled inspections, unscheduled repairs, AOG support, pre-buy inspections, records review and Garmin avionics installations.</p>
         </details>
         <details>
-          <summary>What does aircraft management with 305 SKY include?</summary>
-          <p>Flight crew coordination, flight scheduling and logistics, maintenance planning and oversight, insurance and warranty support, owner reporting and budgeting, and fuel, parking and hangar coordination, all handled by one team with one point of contact.</p>
+          <summary>Where are 305 SKY's locations?</summary>
+          <p>305 SKY has four Florida locations: Fort Lauderdale-Hollywood International (FLL), Fort Lauderdale Executive (FXE), Boca Raton (BCT) and Vero Beach (VRB).</p>
         </details>
         <details>
-          <summary>Do managed aircraft receive preferred maintenance pricing?</summary>
-          <p>Yes. Aircraft managed by 305 SKY receive preferred pricing on maintenance performed by our Fort Lauderdale team, along with fuel discounts through participating providers, preferred parking where available, and access to our South Florida hangar network, subject to availability.</p>
-        </details>
-        <details>
-          <summary>What aircraft do you maintain?</summary>
-          <p>We maintain business jets and turboprops, including the Bombardier Challenger 604, Bombardier Global Express (BD-700), Beechcraft King Air B300 and Mitsubishi MU-2. Contact us about other types.</p>
+          <summary>Can you maintain large-cabin jets like the Gulfstream G450 or Global Express?</summary>
+          <p>Yes. Our 12,000+ square foot Vero Beach hangar takes mid-size and heavy business jets, including the Dassault Falcon 900, Gulfstream G450 and Bombardier Global Express.</p>
         </details>
         <details>
           <summary>Do you provide AOG support?</summary>
           <p>Yes. Aircraft on ground (AOG) situations take priority. Call us with the tail number, location and the problem, and we will tell you what we can do and how quickly.</p>
         </details>
         <details>
-          <summary>How is inspection work priced?</summary>
-          <p>Scheduled inspections are quoted at a flat rate based on the manufacturer's inspection program. Anything found during the inspection is quoted separately and only worked after you approve it.</p>
+          <summary>What does aircraft management include?</summary>
+          <p>Flight crew coordination, flight scheduling and logistics, maintenance planning and oversight, insurance and warranty support, owner reporting and budgeting, and fuel, parking and hangar coordination, with one point of contact for your aircraft.</p>
         </details>
         <details>
           <summary>How long has 305 SKY been in business?</summary>
@@ -673,25 +677,29 @@
     </div>
   </section>
 
-  <section id="contact" class="panel" aria-labelledby="contact-title">
+  <section id="contact" aria-labelledby="contact-title">
     <div class="wrap">
       <div class="contact-head reveal">
         <div>
-          <p class="eyebrow">Visit Us at FLL</p>
-          <h2 id="contact-title">Find our <em class="gold-text">facility.</em></h2>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Talk to <em class="gold-text">our team.</em></h2>
         </div>
-        <p>240 SW 34th St, Fort Lauderdale, FL 33315<br>
-          <a href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a> &middot; <a href="mailto:{{EMAIL}}">{{EMAIL}}</a><br>
-          {{HOURS_DISPLAY e.g. Mon–Fri 8:00 am – 5:00 pm &middot; AOG by phone}}</p>
+        <p>Send us your tail number and what you need, and the nearest 305 SKY location will reply with a written quote.<br>
+          <a href="mailto:{{EMAIL}}">{{EMAIL}}</a> &middot; {{HOURS_DISPLAY e.g. Mon–Fri 8:00 am – 5:00 pm &middot; AOG by phone}}</p>
       </div>
-      <div class="map reveal">
-        <iframe title="Map to 305 SKY, 240 SW 34th St, Fort Lauderdale, FL 33315" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=240+SW+34th+St,+Fort+Lauderdale,+FL+33315&amp;z=15&amp;output=embed"></iframe>
-        <div class="tag"><small>305 SKY &middot; FLL</small>240 SW 34th St, Fort Lauderdale, FL 33315</div>
-      </div>
-      <div class="contact-row">
-        <span>305 SKY LLC &middot; 240 SW 34th St &middot; Fort Lauderdale, FL 33315</span>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=240+SW+34th+St,+Fort+Lauderdale,+FL+33315" target="_blank" rel="noopener">Open in Google Maps &nearr;</a>
+      <div class="nap reveal">
+        <article>
+          <span class="code gold-text">FLL</span>
+          <address>305 SKY &middot; Fort Lauderdale<br>240 SW 34th St<br>Fort Lauderdale, FL 33315<br><a href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a></address>
+        </article>
+        <article>
+          <span class="code gold-text">BCT</span>
+          <address>305 SKY &middot; Boca Raton<br>3300 Airport Rd, Ste 202<br>Boca Raton, FL 33431<br><a href="tel:{{BCT_PHONE_E164}}">{{BCT_PHONE_DISPLAY}}</a></address>
+        </article>
+        <article>
+          <span class="code gold-text">VRB</span>
+          <address>305 SKY &middot; Vero Beach<br>{{VRB_STREET_ADDRESS}}<br>Vero Beach, FL {{VRB_ZIP}}<br><a href="tel:{{VRB_PHONE_E164}}">{{VRB_PHONE_DISPLAY}}</a></address>
+        </article>
       </div>
     </div>
   </section>
@@ -703,8 +711,8 @@
         <h2 id="cta-title">Your aircraft. <em>Our commitment.</em></h2>
       </div>
       <div class="ctas">
-        <a class="btn btn-dark" href="tel:{{PHONE_E164}}">Call {{PHONE_DISPLAY}}</a>
-        <a class="btn btn-dark-line" href="mailto:{{EMAIL}}?subject=Aircraft%20management%20%2F%20maintenance%20inquiry">Contact Our Team</a>
+        <a class="btn btn-dark" href="#contact">Request a Quote</a>
+        <a class="btn btn-dark-line" href="mailto:{{EMAIL}}?subject=Aircraft%20inquiry%20-%20tail%20number%3A%20">Email Our Team</a>
       </div>
     </div>
   </section>
@@ -718,7 +726,7 @@
     </div>
     <div class="bottom">
       <span>&copy; 2026 305 SKY LLC &middot; Private Aviation. Personalized.</span>
-      <span>Aircraft management &amp; maintenance &middot; Fort Lauderdale, FL &middot; <a href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a></span>
+      <span>Aircraft management &amp; maintenance &middot; South Florida</span>
     </div>
   </div>
 </footer>
