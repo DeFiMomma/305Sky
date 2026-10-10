@@ -407,24 +407,25 @@
   }
 
 
-  /* FLL hero: headline on black, then the full ramp photo uncovered */
-  .hero.fll { display: block; min-height: 0; padding: 160px 0 0; background: radial-gradient(900px 520px at 82% 8%, rgba(201,164,92,.16), transparent 62%), var(--black); }
+  /* FLL hero: headline left, the full ramp photo right (bleeds to the screen edge), whole jet visible on load */
+  .hero.fll { display: block; min-height: 0; padding: 132px 0 0; background: radial-gradient(900px 520px at 20% 0%, rgba(201,164,92,.14), transparent 62%), var(--black); }
   .hero.fll::before { display: none; }
-  .hero.fll .hero-intro { display: grid; grid-template-columns: 1.2fr 1fr; gap: 64px; align-items: end; }
-  .hero.fll h1 { margin-bottom: 0; }
+  .hero.fll .hero-split { display: grid; grid-template-columns: minmax(0, 500px) minmax(0, 1fr); gap: 56px; align-items: center; padding-left: max(28px, calc((100vw - var(--max)) / 2 + 28px)); }
+  .hero.fll h1 { font-size: clamp(2.6rem, 4.6vw, 4.3rem); margin-bottom: 24px; }
   .hero.fll .lead { max-width: 44ch; }
   .hero.fll .ctas { margin: 30px 0 0; }
-  .hero.fll .hero-media { position: relative; inset: auto; margin: 72px 0 0; aspect-ratio: 2.25 / 1; max-height: 82vh; width: 100%; overflow: hidden; }
-  .hero.fll .hero-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; }
-  .hero.fll .hero-media::before { content: ""; position: absolute; inset: 0 0 auto; height: 18%; z-index: 1; background: linear-gradient(180deg, var(--black), transparent); }
-  .hero.fll .hero-media::after { content: ""; position: absolute; inset: auto 0 0; height: 26%; z-index: 1; background: linear-gradient(0deg, var(--black), transparent); }
-  .hero.fll .pillars { position: relative; z-index: 2; margin-top: -24px; }
+  .hero.fll .hero-media { position: relative; inset: auto; margin: 0; aspect-ratio: 2 / 1; overflow: hidden; }
+  .hero.fll .hero-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+  .hero.fll .hero-media::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 14%; z-index: 1; background: linear-gradient(90deg, var(--black), transparent); }
+  .hero.fll .hero-media::after { content: ""; position: absolute; inset: auto 0 0; height: 18%; z-index: 1; background: linear-gradient(0deg, var(--black), transparent); }
+  .hero.fll .pillars { margin-top: 56px; }
   @media (max-width: 900px) {
-    .hero.fll { padding-top: 124px; }
-    .hero.fll .hero-intro { grid-template-columns: 1fr; gap: 26px; }
-    .hero.fll .hero-media { margin-top: 48px; aspect-ratio: 3 / 2; max-height: none; }
-    .hero.fll .hero-media img { object-position: 46% 70%; }
-    .hero.fll .pillars { margin-top: 0; }
+    .hero.fll { padding-top: 84px; }
+    .hero.fll .hero-split { grid-template-columns: 1fr; gap: 28px; padding-left: 0; }
+    .hero.fll .hero-media { order: -1; aspect-ratio: 16 / 10; }
+    .hero.fll .hero-media::before { display: none; }
+    .hero.fll .hero-text { padding: 0 20px; }
+    .hero.fll .pillars { margin-top: 40px; }
   }
 
   /* Heritage */
@@ -455,25 +456,23 @@
 
 <main>
   <section class="hero fll" aria-labelledby="page-title">
-    <div class="wrap hero-intro">
-      <div>
-        <p class="eyebrow">Fort Lauderdale-Hollywood International &middot; FLL</p>
+    <div class="hero-split">
+      <div class="hero-text">
+        <p class="eyebrow">Fort Lauderdale &middot; FLL</p>
         <h1 id="page-title">
           <span class="gold-text">Aircraft Management</span> <em>&amp;</em> Maintenance
           <small>in Fort Lauderdale, Florida</small>
         </h1>
-      </div>
-      <div>
         <p class="lead">Personalized, end-to-end management for private aircraft, backed by an in-house maintenance team at FLL. One standard of care, from the flight deck to the hangar floor.</p>
         <div class="ctas">
           <a class="btn btn-gold" href="#contact">Schedule a Consultation</a>
           <a class="btn btn-line" href="tel:{{PHONE_E164}}">{{PHONE_DISPLAY}}</a>
         </div>
       </div>
+      <figure class="hero-media">
+        <img class="slot" src="images/hero.jpg" width="1774" height="887" alt="Bombardier Challenger business jet on the ramp in front of the 305 SKY maintenance hangar in Fort Lauderdale at sunset" fetchpriority="high" onload="this.classList.add('loaded')" onerror="this.remove()">
+      </figure>
     </div>
-    <figure class="hero-media">
-      <img class="slot" src="images/hero.jpg" width="1774" height="887" alt="Bombardier Challenger business jet on the ramp in front of the 305 SKY maintenance hangar in Fort Lauderdale at sunset" fetchpriority="high" onload="this.classList.add('loaded')" onerror="this.remove()">
-    </figure>
     <div class="wrap">
       <ul class="pillars">
         <li><b>01</b>Private aircraft management</li>
