@@ -1,0 +1,38 @@
+# 305sky.com .htaccess additions: blog cleanup, part 2
+# Add ONLY after the new location, aircraft, AOG and management pages are live.
+
+# remove the 'Redirect gone /blog/challenger-maintenance-near-me' line from part 1, then:
+Redirect 301 /blog/challenger-maintenance-near-me /challenger-maintenance
+Redirect 301 /blog/king-air-maintenance-guide /king-air-maintenance
+Redirect 301 /blog/aircraft-on-ground-near-me /aog-aircraft-on-ground
+Redirect 301 /blog/24-7-aircraft-management-services-benefits /aircraft-management
+Redirect 301 /blog/emergency-aog-aircraft-support-miami /aog-aircraft-on-ground
+Redirect 301 /blog/how-to-vet-aog-maintenance-providers /aog-aircraft-on-ground
+Redirect 301 /blog/aircraft-maintenance-vero-beach /vero-beach-vrb-aircraft-maintenance
+Redirect 301 /blog/how-to-hire-mobile-aircraft-maintenance-team /aog-aircraft-on-ground
+Redirect 301 /blog/why-choose-specialized-aog-support-business-jets /aog-aircraft-on-ground
+Redirect 301 /blog/jet-maintenance-near-me-fort-lauderdale /fort-lauderdale-fll-aircraft-maintenance
+Redirect 301 /blog/citation-maintenance-near-me /citation-maintenance
+Redirect 301 /blog/private-jet-maintenance-miami-2026 /opa-locka-opf-aircraft-maintenance
+Redirect 301 /blog/what-is-included-in-emergency-engine-repair /aog-aircraft-on-ground
+Redirect 301 /blog/aircraft-maintenance-fort-lauderdale-best-aircraft-maintenance-company-fort-lauderdale /fort-lauderdale-fll-aircraft-maintenance
+Redirect 301 /blog/aircraft-maintenance-near-me-fort-lauderdale /fort-lauderdale-fll-aircraft-maintenance
+Redirect 301 /blog/aircraft-on-ground-recovery-process /aog-aircraft-on-ground
+Redirect 301 /blog/alternatives-to-traditional-aog-logistics /aog-aircraft-on-ground
+Redirect 301 /blog/aog-cost-per-hour-grounded-aircraft /aog-aircraft-on-ground
+Redirect 301 /blog/aog-services-near-me /aog-aircraft-on-ground
+Redirect 301 /blog/common-aog-maintenance-issues-repair-solutions /aog-aircraft-on-ground
+Redirect 301 /blog/comprehensive-aircraft-management-services-2026 /aircraft-management
+Redirect 301 /blog/emergency-aog-maintenance-response-time-expectations /aog-aircraft-on-ground
+Redirect 301 /blog/how-to-prepare-aircraft-mobile-maintenance /aog-aircraft-on-ground
+Redirect 301 /blog/is-247-aircraft-maintenance-worth-the-investment /aog-aircraft-on-ground
+Redirect 301 /blog/is-aog-insurance-coverage-worth-it /aog-aircraft-on-ground
+Redirect 301 /blog/mobile-aircraft-mechanic-vs-fbo-maintenance-quality /aog-aircraft-on-ground
+Redirect 301 /blog/mobile-aog-repair-services-worth-it /aog-aircraft-on-ground
+Redirect 301 /blog/mobile-maintenance-cost-benefit-private-jets /aog-aircraft-on-ground
+Redirect 301 /blog/mobile-vs-hangar-maintenance-benefits-aircraft /aog-aircraft-on-ground
+Redirect 301 /blog/private-jet-maintenance-vs-corporate-aircraft-management /aircraft-management
+Redirect 301 /blog/top-7-signs-you-need-emergency-aircraft-repair /aog-aircraft-on-ground
+Redirect 301 /blog/what-is-aog-maintenance-support-fort-lauderdale /aog-aircraft-on-ground
+Redirect 301 /blog/what-to-include-in-a-mobile-aircraft-maintenance-contract /aog-aircraft-on-ground
+Redirect 301 /blog/why-aircraft-aog-emergency-response-critical-2026 /aog-aircraft-on-ground

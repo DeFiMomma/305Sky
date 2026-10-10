@@ -1,0 +1,111 @@
+# 305sky.com .htaccess additions: blog cleanup, part 1 (safe to add now)
+# Deleted posts return 410 Gone; duplicate posts redirect to the post that replaces them.
+
+Redirect gone /blog/fleet-maintenance-management-best-practices
+Redirect gone /blog/south-florida-corporate-fleet-management-guide
+Redirect gone /blog/challenger-maintenance-near-me
+Redirect 301 /blog/private-jet-maintenance-providers-florida /
+Redirect 301 /blog/aircraft-pre-buy-inspection-what-to-expect /blog/how-to-prepare-for-aircraft-pre-buy-inspection
+Redirect 301 /blog/best-private-jet-cabin-interior-transformations /blog/aircraft-interior-design-and-upholstery-a-complete-guide
+Redirect 301 /blog/private-jet-pre-buy-inspection-checklist /blog/how-to-prepare-for-aircraft-pre-buy-inspection
+Redirect 301 /blog/avoiding-hidden-aircraft-maintenance-fees /blog/avoiding-hidden-costs-in-aircraft-maintenance-a-practical-guide
+Redirect 301 /blog/south-florida-aircraft-maintenance-services-guide /
+Redirect 301 /blog/aircraft-maintenance-management-best-practices /blog/aircraft-maintenance-guide
+Redirect 301 /blog/aircraft-maintenance-for-corporate-fleets-a-complete-guide /blog/jet-maintenance-for-charter-operators-7-essential-practices
+Redirect 301 /blog/south-florida-private-jet-maintenance-services /
+Redirect 301 /blog/avionics-upgrade-benefits-jets-guide /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/private-jet-avionics-upgrade-benefits-2026 /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/aircraft-maintenance-south-florida-guide /
+Redirect 301 /blog/engine-overhaul-vs-repair-cost-benefit /blog/aircraft-engine-overhaul-worth-it
+Redirect 301 /blog/how-to-minimize-private-jet-downtime /blog/how-to-minimize-aircraft-downtime
+Redirect 301 /blog/managing-private-aircraft-regulatory-compliance /blog/aircraft-maintenance-regulatory-compliance-checklist
+Redirect 301 /blog/routine-aircraft-inspections-importance /blog/private-jet-maintenance-schedule-guide
+Redirect 301 /blog/digital-logbook-compliance-worth-it /blog/aircraft-maintenance-record-keeping-software-comparison
+Redirect 301 /blog/aircraft-maintenance-billing-transparency-guide /blog/avoiding-hidden-costs-in-aircraft-maintenance-a-practical-guide
+Redirect 301 /blog/how-to-conduct-private-jet-test-flight /blog/aircraft-test-flight-checklist-what-to-look-for
+Redirect 301 /blog/aircraft-engine-records-pre-buy-evaluation /blog/how-to-prepare-for-aircraft-pre-buy-inspection
+Redirect 301 /blog/proactive-aircraft-maintenance-prevents-emergency-repairs /blog/private-jet-maintenance-schedule-guide
+Redirect 301 /blog/engine-health-monitoring-maintenance-costs /blog/jet-engine-repair-and-maintenance-guide
+Redirect 301 /blog/how-to-choose-private-jet-inspection-facility /blog/how-to-choose-private-aircraft-maintenance-provider
+Redirect 301 /blog/what-to-do-if-pre-buy-inspection-fails /blog/how-to-prepare-for-aircraft-pre-buy-inspection
+Redirect 301 /blog/aircraft-maintenance-tips-new-jet-owners /blog/aircraft-maintenance-guide
+Redirect 301 /blog/how-to-choose-a-private-jet-interior-designer /blog/aircraft-interior-design-and-upholstery-a-complete-guide
+Redirect 301 /blog/tips-for-buying-a-used-aircraft-remotely /blog/how-to-prepare-for-aircraft-pre-buy-inspection
+Redirect 301 /blog/questions-to-ask-aircraft-seller-before-inspection /blog/how-to-prepare-for-aircraft-pre-buy-inspection
+Redirect 301 /blog/questions-to-ask-your-pre-buy-inspection-team /blog/how-to-prepare-for-aircraft-pre-buy-inspection
+Redirect 301 /blog/benefits-bespoke-cabin-interior-transformations /blog/aircraft-interior-design-and-upholstery-a-complete-guide
+Redirect 301 /blog/7-best-practices-private-jet-interior-deep-cleaning /blog/aircraft-interior-design-and-upholstery-a-complete-guide
+Redirect 301 /blog/aircraft-age-maintenance-shop-selection /blog/how-to-choose-private-aircraft-maintenance-provider
+Redirect 301 /blog/aircraft-avionics-upgrades-south-florida /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/aircraft-cabin-interior-transformation-services /blog/aircraft-interior-design-and-upholstery-a-complete-guide
+Redirect 301 /blog/aircraft-maintenance-vs-repair-services /blog/how-to-choose-private-aircraft-maintenance-provider
+Redirect 301 /blog/aircraft-specialist-jet-center-guide /blog/how-to-choose-private-aircraft-maintenance-provider
+Redirect 301 /blog/airworthiness-directive-compliance-timeline-explained /blog/aircraft-maintenance-regulatory-compliance-checklist
+Redirect 301 /blog/alternatives-to-expensive-aircraft-engine-overhauls /blog/aircraft-engine-overhaul-worth-it
+Redirect 301 /blog/alternatives-to-manufacturer-aircraft-maintenance-programs /blog/aircraft-maintenance-shop-vs-factory-service
+Redirect 301 /blog/avionics-upgrade-impact-aircraft-resale-value /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/avionics-upgrades-charter-aircraft-guide /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/benefits-of-independent-aircraft-maintenance-for-older-aircraft /blog/aircraft-maintenance-shop-vs-factory-service
+Redirect 301 /blog/bespoke-avionics-upgrades-benefits /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/best-avionics-systems-for-corporate-jets /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/best-glass-cockpit-upgrades-business-aircraft /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/best-south-florida-aircraft-mechanics /
+Redirect 301 /blog/calculate-roi-aircraft-upgrades-calculate-roi-business-aircraft-upgrades /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/charter-jet-pre-purchase-inspection-checklist /blog/how-to-prepare-for-aircraft-pre-buy-inspection
+Redirect 301 /blog/choosing-professional-aircraft-maintenance-shop /blog/how-to-choose-private-aircraft-maintenance-provider
+Redirect 301 /blog/cost-aircraft-pre-purchase-inspection /blog/how-to-prepare-for-aircraft-pre-buy-inspection
+Redirect 301 /blog/faa-avionics-compliance-2026-requirements /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/faa-logbook-entry-requirements-explained /blog/aircraft-logbook-review
+Redirect 301 /blog/how-to-audit-aircraft-maintenance-providers /blog/how-to-choose-private-aircraft-maintenance-provider
+Redirect 301 /blog/how-to-choose-aircraft-escrow-service /blog/private-jet-title-search-and-lien-check-guide
+Redirect 301 /blog/how-to-choose-avionics-for-private-jets /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/how-to-choose-private-jet-avionics-installers /blog/choosing-avionics-upgrade-provider
+Redirect 301 /blog/how-to-maintain-private-jet-upholstery-fabrics /blog/aircraft-interior-design-and-upholstery-a-complete-guide
+Redirect 301 /blog/how-to-manage-aircraft-maintenance-records-small-fleets /blog/aircraft-maintenance-record-keeping-software-comparison
+Redirect 301 /blog/how-to-prepare-your-aircraft-for-annual-inspection /blog/private-jet-maintenance-schedule-guide
+Redirect 301 /blog/how-to-track-aircraft-engine-time /blog/managing-routine-maintenance-intervals-for-turbine-engines
+Redirect 301 /blog/how-to-verify-aircraft-title-and-lien-status /blog/private-jet-title-search-and-lien-check-guide
+Redirect 301 /blog/independent-vs-oem-aircraft-maintenance-contracts /blog/aircraft-maintenance-shop-vs-factory-service
+Redirect 301 /blog/long-term-aircraft-maintenance-budgeting-tips /blog/private-jet-maintenance-cost-breakdown
+Redirect 301 /blog/managing-spare-parts-inventory-for-jet-operators /blog/jet-maintenance-for-charter-operators-7-essential-practices
+Redirect 301 /blog/negotiate-aircraft-price-after-inspection /blog/how-to-prepare-for-aircraft-pre-buy-inspection
+Redirect 301 /blog/private-jet-cockpit-modernization-financing-guide /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/quiet-luxury-aircraft-interior-design /blog/aircraft-interior-design-and-upholstery-a-complete-guide
+Redirect 301 /blog/satellite-connectivity-private-jets-guide /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/step-by-step-guide-avionics-upgrades /blog/private-jet-avionics-upgrade-cost-2026
+Redirect 301 /blog/understanding-aircraft-maintenance-regulations-faa /blog/aircraft-maintenance-regulatory-compliance-checklist
+Redirect 301 /blog/verify-aircraft-mechanic-insurance-credentials /blog/how-to-choose-private-aircraft-maintenance-provider
+Redirect 301 /blog/what-happens-if-you-miss-an-ad-aircraft /blog/aircraft-maintenance-regulatory-compliance-checklist
+Redirect 301 /blog/why-aircraft-maintenance-schedule-needs-frequent-updates /blog/private-jet-maintenance-schedule-guide
+Redirect gone /blog/predictive-maintenance-commercial-aircraft-benefits
+Redirect gone /blog/avionics-upgrade-cost-single-engine-piston-aircraft
+Redirect gone /blog/seal-aviation-alternative-for-jet-owners
+Redirect gone /blog/aircraft-engine-component-refurbishment-best-practices
+Redirect gone /blog/ads-b-compliance-private-planes
+Redirect gone /blog/how-to-choose-faa-part-145-repair-station
+Redirect gone /blog/navigating-airworthiness-certification-for-jet-engines
+Redirect gone /blog/essential-tools-for-jet-engine-disassembly-and-inspection
+Redirect gone /blog/ads-b-installation-timeline
+Redirect gone /blog/aircraft-inspection-checklist-pre-flight-2026-pilot-guide
+Redirect gone /blog/aircraft-lease-maintenance-legal-guide
+Redirect gone /blog/aircraft-maintenance-insurance-requirements-explained
+Redirect gone /blog/aircraft-maintenance-liability-insurance-guide
+Redirect gone /blog/aircraft-maintenance-technician-training-programs
+Redirect gone /blog/aircraft-mechanic-salary-expectations-2026
+Redirect gone /blog/aircraft-warranty-limitations-guide
+Redirect gone /blog/banyan-alternative-aircraft-maintenance-305-sky
+Redirect gone /blog/banyan-aviation-maintenance-alternatives
+Redirect gone /blog/benefits-of-predictive-maintenance-for-charter-jets
+Redirect gone /blog/benefits-predictive-maintenance-aviation
+Redirect gone /blog/best-avionics-upgrades-for-cessna-172
+Redirect gone /blog/can-you-perform-preventive-maintenance-on-your-own-aircraft
+Redirect gone /blog/financing-options-for-jet-maintenance-programs
+Redirect gone /blog/future-digital-aircraft-maintenance-solutions
+Redirect gone /blog/how-to-become-faa-certified-aircraft-mechanic
+Redirect gone /blog/how-weather-impacts-jet-maintenance-schedules
+Redirect gone /blog/negotiating-aircraft-parts-pricing-strategies
+Redirect gone /blog/protecting-private-aircraft-from-cyber-threats
+Redirect gone /blog/reliable-jet-maintenance-providers-guide
+Redirect gone /blog/safety-culture-in-private-jet-maintenance
+Redirect gone /blog/seal-aviation-vs-competitors-fort-lauderdale-mro-guide
+Redirect gone /blog/verify-aviation-maintenance-certifications
