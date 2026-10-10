@@ -1,5 +1,8 @@
 # 305sky.com SEO check: October 10, 2026
 
+**Every individual fix, with its URL, is in [fix-list-2026-10-10.md](fix-list-2026-10-10.md).** A later full
+scan found 12 posts that claim or imply Part 145 status, not just the one below.
+
 Checked: the home page, robots.txt, the sitemap (179 URLs), Our Work, Aircraft Sales, and all
 175 blog posts.
 
