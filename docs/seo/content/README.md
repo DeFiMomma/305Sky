@@ -25,6 +25,7 @@ it to the profile descriptions, every page and the directory listings.
 |---|---|---|
 | [01-google-business-profiles.md](01-google-business-profiles.md) | 3–7, then weekly | Google Business Profile: categories, descriptions, services, service areas, photos, first 4 weeks of posts |
 | [02-review-requests.md](02-review-requests.md) | Daily from Day 1 | Text/email review requests, QR card, review replies |
+| [03-blog-brief-grandranker.md](03-blog-brief-grandranker.md) | Ongoing | Instructions and topic list for the GrandRanker blog tool |
 | [pages/fort-lauderdale-fll-aircraft-maintenance.md](pages/fort-lauderdale-fll-aircraft-maintenance.md) | 8 | Website: FLL location page (the FLL profile links here) |
 | [pages/boca-raton-bct-aircraft-maintenance.md](pages/boca-raton-bct-aircraft-maintenance.md) | 8 | Website: BCT location page |
 | [pages/vero-beach-vrb-aircraft-maintenance.md](pages/vero-beach-vrb-aircraft-maintenance.md) | 8 | Website: VRB location page |
